@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>PAINEL ADM | Dashboard</title>
+    <title>PAINEL ADM | DASHBOARD</title>
     <script src="{{asset('assests/painel/js/jquery-3.1.1.min.js')}}"></script>
     <link href="{{asset('assests/painel/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assests/painel/font-awesome/css/font-awesome.css')}}" rel="stylesheet" type="text/css">
@@ -90,9 +90,12 @@ toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright ali
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element">
-                            @isset(auth()->user()->imagem)
-                            <img alt="image" class="rounded-circle" src="{{session('URL_IMG') .  auth()->user()->imagem }}"/>
-                            @endisset
+                            @if (auth()->user()->imagem)
+                                @isset(auth()->user()->imagem)
+                                <img alt="image" class="rounded-circle" src="{{session('URL_IMG') .  auth()->user()->imagem }}"/>
+                                @endisset
+                            @endif
+
 
                             <a data-toggle="dropdown" class="dropdown-toggle" href="">
                                 <span class="block m-t-xs font-bold">
