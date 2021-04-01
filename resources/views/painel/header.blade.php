@@ -39,6 +39,11 @@
     <!-- Inclusão do Plugin jQuery Validation-->
     <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 
+
+
+    <link href="{{asset('assests/painel/css/plugins/steps/jquery.steps.css')}}" rel="stylesheet" type="text/css">
+
+
     <script src="//cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
 
     <script>
@@ -131,22 +136,22 @@ toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright ali
                     </li>
 
                     <li class="">
-                        <a href="#" ><i class="fa fa-institution"></i></i><span class="nav-label">Quem Somos</span> <span class="fa arrow"></span></a>
+                        <a href="#" ><i class="fa fa-users"></i></i><span class="nav-label">Quem Somos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class=""><a href="{{ url('sistema/editar-institucional/1') }}">Alterar</a></li>
                         </ul>
                     </li>
 
                     <li class="">
-                        <a href="#" ><i class="fa fa-cubes"></i><span class="nav-label">Produtos</span> <span class="fa arrow"></span></a>
+                        <a href="#" ><i class="fa fa-building-o"></i><span class="nav-label">Imóveis</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class=""><a href="{{ route('produto.cadastrar') }}">Cadastrar</a></li>
-                            <li class=""><a href="{{ route('produto.listar') }}">Listar</a></li>
+                            <li class=""><a href="{{ route('imovel.cadastrar') }}">Cadastrar</a></li>
+                            <li class=""><a href="{{ route('imovel.listar') }}">Listar</a></li>
                         </ul>
                     </li>
 
                     <li class="">
-                        <a href="#" ><i class="fa fa-building-o"></i><span class="nav-label">Novo Ar</span> <span class="fa arrow"></span></a>
+                        <a href="#" ><i class="fa fa-institution"></i><span class="nav-label">Seven Imóbiliaria</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li class=""><a href="{{ url('sistema/editar-empresa/1') }}">Alterar</a></li>
                         </ul>

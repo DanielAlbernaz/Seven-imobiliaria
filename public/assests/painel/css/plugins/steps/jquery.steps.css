@@ -102,7 +102,7 @@
 .wizard > .steps .disabled a:hover,
 .wizard > .steps .disabled a:active
 {
-    background: #eee;
+    background: #fff;
     color: #aaa;
     cursor: default;
 }
@@ -134,7 +134,7 @@
 
 .wizard > .content
 {
-    background: #eee;
+    background: #fff;
     display: block;
     margin: 5px 5px 10px 5px;
     min-height: 120px;
@@ -161,7 +161,7 @@
 .wizard > .content > .body
 {
     float: left;
-    position: absolute;
+    /* position: absolute; */
     width: 95%;
     height: 95%;
     padding: 2.5%;
@@ -266,7 +266,7 @@
 .wizard > .actions .disabled a:hover,
 .wizard > .actions .disabled a:active
 {
-    background: #eee;
+    background: #fff;
     color: #aaa;
 }
 

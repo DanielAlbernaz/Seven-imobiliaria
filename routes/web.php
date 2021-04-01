@@ -67,16 +67,16 @@ Route::middleware(['auth'])->group(function() {
             });
 
 
-            Route::name('produto.')->group(function (){
-                Route::get('/cadastrar-produto', 'App\Http\Controllers\Painel\ControllerProduto@create')->name('cadastrar');
-                Route::post('/salvar-produto', 'App\Http\Controllers\Painel\ControllerProduto@store')->name('salvar');
-                Route::post('/salvar-galleria/{id}', 'App\Http\Controllers\Painel\ControllerProduto@storeGalleria')->name('galleria');
-                Route::get('/listar-produto', 'App\Http\Controllers\Painel\ControllerProduto@list')->name('listar');
-                Route::post('/status-produto', 'App\Http\Controllers\Painel\ControllerProduto@status')->name('status');
-                Route::post('/deletar-produto/{id}', 'App\Http\Controllers\Painel\ControllerProduto@delete')->name('delete');
-                Route::post('/deletar-produto-imagem/{id}', 'App\Http\Controllers\Painel\ControllerProduto@destroyImage')->name('destroy');
-                Route::get('/editar-produto/{id}', 'App\Http\Controllers\Painel\ControllerProduto@find')->name('find');
-                Route::post('/edit-produto', 'App\Http\Controllers\Painel\ControllerProduto@edit')->name('edit');
+            Route::name('imovel.')->group(function (){
+                Route::get('/cadastrar-imovel', 'App\Http\Controllers\Painel\ControllerImovel@create')->name('cadastrar');
+                Route::post('/salvar-imovel', 'App\Http\Controllers\Painel\ControllerImovel@store')->name('salvar');
+                Route::post('/salvar-galleria/{id}', 'App\Http\Controllers\Painel\ControllerImovel@storeGalleria')->name('galleria');
+                Route::get('/listar-imovel', 'App\Http\Controllers\Painel\ControllerImovel@list')->name('listar');
+                Route::post('/status-imovel', 'App\Http\Controllers\Painel\ControllerImovel@status')->name('status');
+                Route::post('/deletar-imovel/{id}', 'App\Http\Controllers\Painel\ControllerImovel@delete')->name('delete');
+                Route::post('/deletar-imovel-imagem/{id}', 'App\Http\Controllers\Painel\ControllerImovel@destroyImage')->name('destroy');
+                Route::get('/editar-imovel/{id}', 'App\Http\Controllers\Painel\ControllerImovel@find')->name('find');
+                Route::post('/edit-imovel', 'App\Http\Controllers\Painel\ControllerImovel@edit')->name('edit');
             });
 
             Route::name('institucional.')->group(function (){

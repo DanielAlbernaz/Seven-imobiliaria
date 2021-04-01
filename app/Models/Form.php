@@ -174,7 +174,7 @@ class Form extends Model
             $form .='</div>';
             $form .='<div class="col-sm-3" >';
             $form .=' <div class="lightBoxGallery" >';
-            $form .='<a data-gallery=""><img src="'.session('URL_IMG'). $imgValue.'"></a>';
+            $form .='<a data-gallery=""><img src="'.urlImg(). $imgValue.'"></a>';
             $form .='</div>';
             $form .='</div>';
             $form .='</div>';
@@ -189,7 +189,7 @@ class Form extends Model
             $form .='<input type="hidden" name="image_file" id="image_file">';
             $form .='</div>';
 
-        $form .='<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">';
+        $form .='<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true"> ';
         $form .='<div class="modal-dialog modal-lg" role="document">';
         $form .='<div class="modal-content">';
         $form .='<div class="modal-header">';
@@ -286,7 +286,7 @@ class Form extends Model
                 if($value != null){
                     for($i = 0; $i < count($value); $i++){
                         $form .='<a  style="padding: 5px; cursor:pointer; width: 150px;height: 189px;display: -webkit-inline-box;" id="imagemGalleria">';
-                        $form .='<img style="display: inline !important;  margin: 5px;  width: 100%;height: 100%;"   class="img-fluid img-thumbnail"src="'.session('URL_IMG'). $value[$i]->imagem.'" alt="">';
+                        $form .='<img style="display: inline !important;  margin: 5px;  width: 100%;height: 100%;"   class="img-fluid img-thumbnail"src="'.urlImg(). $value[$i]->imagem.'" alt="">';
 
                         $form .=' <button  id="buttonGalleria" value="'. $value[$i]->id . ','. $route .'" onclick="destroyImage(this.value)" type="button" style="margin-left: -39px; margin-top: 142px;" class="btn btn-sm btn-danger " data-image="16" data-url="http://127.0.0.1:8000/sistema/cms/blog/posts/1/gallery/16">';
                         $form .='<i class="fa fa-trash"></i>';
@@ -412,6 +412,53 @@ class Form extends Model
     {
         $form = '';
                             $form .= '</form>';
+                        $form .= '</div>';
+                    $form .= '</div>';
+                $form .= '</div>';
+            $form .= '</div>';
+
+        return print_r($form);
+    }
+
+    static function sb_FormBeginWizard()
+    {
+        $form = '';
+
+        $form .= '<div class="row">';
+            $form .= '<div class="col-lg-12">';
+                $form .= '<div class="ibox ">';
+                    $form .= '<div class="">';
+                    $form .= '<div id="wizard">';
+
+
+        return print_r($form);
+    }
+
+    static function sb_FormBeginStepWizard($name= '')
+    {
+        $form = '';
+
+        $form .= '<h1>'. $name .'</h1>';
+            $form .= '<div class="step-content">';
+
+        return print_r($form);
+    }
+
+
+    static function sb_FormEndStepWizard()
+    {
+        $form = '';
+
+        $form .= '</div>';
+
+        return print_r($form);
+    }
+
+
+    static function sb_FormEndWizard()
+    {
+        $form = '';
+                            $form .= '</div>';
                         $form .= '</div>';
                     $form .= '</div>';
                 $form .= '</div>';

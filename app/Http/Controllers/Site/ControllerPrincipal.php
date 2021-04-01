@@ -23,11 +23,9 @@ class ControllerPrincipal extends Controller
          */
         $imagem = new ImageManagerStatic();
         ControllerBanner::inactivateDate();
-        ControllerProduto::inactivateDate();
 
         $banner = Banner::where('status', 1)->whereDate('begin_date', '<=', Carbon::now()->toDateString())->get();
-        $produto = Produto::where('status', 1)->whereDate('begin_date', '<=', Carbon::now()->toDateString())->get();
 
-        return view('site.paginas.principal',  compact('banner', 'produto'));
+        return view('site.paginas.principal',  compact('banner'));
     }
 }
