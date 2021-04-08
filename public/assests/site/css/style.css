@@ -1,6 +1,12 @@
+* {
+  padding: 0;
+}
+
+
 body{
     width: 100%;
-    
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -11,4 +17,59 @@ body{
   width: 100%;
   height: 60px;  
   background: #799E41;
+  display: inline-flex;
+}
+
+.telphone{
+  width: 20%;
+  margin-left: 147px;
+  padding-top: 20px;
+  display: inline-flex;
+}
+
+.icontel{
+  width: 10%;
+}
+
+.number{
+  width: 70%;
+}
+
+.number a{
+  text-decoration: none;
+}
+
+.locali{
+  width: 30%;
+  display: inline-flex;
+}
+
+.amet{
+  width: 65%;
+  padding-top: 20px;
+}
+
+.amet a{
+  text-decoration: none;
+}
+
+.iconamet{
+  margin-left: 1%;
+  padding-top: 15px;
+}
+
+.iconredes{
+  width: 10%;
+  display: inline-flex;
+  padding-top: 20px;
+  margin-left: 24%;
+}
+
+.iconredes dd{
+  text-decoration: none;
+  margin-left: 15%;
+}
+
+.iconredes dd a{
+  color: aliceblue;
 }
