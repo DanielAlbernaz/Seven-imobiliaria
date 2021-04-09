@@ -128,6 +128,8 @@ body{
   position: absolute;
 }
 
+/* Formulario de Pesquisa */
+
 .buscas{
   width: 60%;
   height: 232px;
@@ -135,5 +137,92 @@ body{
   position: relative;
   margin-left: 253px;
   margin-top: -117px;
-  filter: drop-shadow( 0px 0px 10px  rgb(146, 146, 146));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.filterbusca{
+  padding: 6% 4%;
+}
+
+.imoveis{
+  display: inline-flex;
+}
+
+.imoveis a{
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3C3C;
+}
+
+.decoration{
+  padding: 1% 1%;
+  width: 110px;
+  margin-right: 18px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.back{
+  background: #799E41;
+  height: 23px;
+  
+}
+
+.bord{
+  border: 1px solid #7E7E7E;
+  height: 21px;
+}
+
+.busc{
+  padding-top: 1%;
+  width: 190px;
+  display: inline-flex;
+  margin-left: 156px;
+}
+
+.busc a{
+  color: #799E41;
+  margin-right: 20px;
+}
+
+.filter-imoveis{
+  margin-top: 40px;
+}
+
+.localit{
+  padding: 3%;
+  border: 1px solid #8F8F8F;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 232px;
+  height: 64px;
+  margin-right: 41px;
+  font-size: 16px;
+  color:#A4A4A4;
+}
+
+.tipoimo{
+  padding: 3%;
+  border: 1px solid #8F8F8F;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 232px;
+  height: 64px;
+  margin-right: 41px;
+  font-size: 16px;
+  color:#A4A4A4;
+  }
+
+  .filbusc{
+    width: 160px;
+    height: 64px;
+    background: #44318A;
+    border-radius: 5px;
+    border: 0px;
+    color: #FFFFFF;
+    font-size: 20px;
+  }
