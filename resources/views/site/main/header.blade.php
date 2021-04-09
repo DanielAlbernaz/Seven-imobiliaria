@@ -10,8 +10,6 @@
 </head>
 <body>
     <header>
-        <nav class="navtopo">
-
             <div class="rectangle">
 
                 <div class="telphone">
@@ -28,7 +26,7 @@
                         <a href=""><font color="white">Lorem ipsum dolor sit amet, consectetur.</font></a>
                     </div>
                     <div class="iconamet">
-                        <a href=""><img src="./images/placeholder.png" alt=""></a>
+                        <a href=""><img src="./images/room.png" alt=""></a>
                     </div>
                 </div>
 
@@ -40,8 +38,28 @@
                         <a href=""><i class="fa fa-instagram"></i></a>
                     </dd>
                 </div>
-
             </div>
 
+        <nav class="navtopo">   
+            <div class="marca">
+                <img src="./images/VERSÕES DA MARCA-01 1.png" alt="">
+            </div>
+            <div class="menu">
+                <dd>
+                    <a href="">Lorem</a>
+                </dd>
+                <dd>
+                    <a href="">Lorem</a>
+                </dd>
+                <dd>
+                    <a href="">Lorem</a>
+                </dd>
+                <dd>
+                    <a href="">Lorem</a>
+                </dd>
+            </div>
+            <div class="turned">
+                <a href=""><img src="./images/turned_in_not.png" alt=""></a>
+            </div>
         </nav>
     </header>
