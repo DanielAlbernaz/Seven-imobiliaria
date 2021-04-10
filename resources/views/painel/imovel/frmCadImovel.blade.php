@@ -18,9 +18,6 @@
 use App\Models\Form;
 
 Form::sb_FormBegin('Cadastro de Imóveis', 'validation');
-Form::sb_FormBeginWizard();
-
-Form::sb_FormBeginStepWizard('Dados imóvel');
 
 Form::sb_FormText('Título', 'title', 'Defina um título para o produto', '800px', '', true);
 
@@ -29,11 +26,6 @@ Form::sb_FormText('Motor', 'motor', 'Defina um valor para o campo', '200px', '',
 Form::sb_FormText('Consumo elétrico', 'consumo', 'Defina um valor para o campo', '200px', '', false);
 Form::sb_FormText('Abertura de parede', 'abertura', 'Defina um valor para o campo', '200px', '', false);
 Form::sb_FormText('Reservatório / peso seco', 'reservatorio', 'Defina um valor para o campo', '200px', '', false);
-
-Form::sb_FormEndStepWizard();
-
-
-Form::sb_FormBeginStepWizard('Dados imóvel');
 
 Form::sb_FormTextHtml('Descrição produto', 'text', 'Escre uma descrição', '', false);
 
@@ -47,17 +39,7 @@ Form::sb_FormDate('Data início exibição', 'begin_date', 'Data inícial que o 
 
 Form::sb_FormDate('Data final exibição', 'end_date', 'Data final máxima que o conteúdo será exibido', '289px', '', false);
 
-
 Form::sb_FormSubmit('Salvar', 'sistema/salvar-imovel', '');
-
-Form::sb_FormEndStepWizard();
-
-
-Form::sb_FormEndWizard();
-
-
-
-
 
 Form::sb_FormEnd();
 
@@ -65,11 +47,8 @@ Form::sb_FormEnd();
 
 
 ?>
-<script>
-    $(document).ready(function(){
 
-   });
-</script>
+
 
 <script>
     var bs_modal = $('#modal');
