@@ -130,14 +130,14 @@ body{
 
 /* Formulario de Pesquisa */
 
-.buscas{
-  width: 60%;
-  height: 232px;
+.buscas {
+  width: 61%;
+  height: 212px;
   background: #FDFDFD;
   position: relative;
   margin-left: 253px;
-  margin-top: -117px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: -110px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .filterbusca{
@@ -173,7 +173,7 @@ body{
 }
 
 .bord{
-  border: 1px solid #7E7E7E;
+  border: 1px solid #cecece;
   height: 21px;
 }
 
@@ -181,7 +181,7 @@ body{
   padding-top: 1%;
   width: 190px;
   display: inline-flex;
-  margin-left: 156px;
+  margin-left: 170px;
 }
 
 .busc a{
@@ -190,16 +190,21 @@ body{
 }
 
 .filter-imoveis{
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.filter-imoveis form{
+  display: inline-flex;
 }
 
 .localit{
   padding: 3%;
-  border: 1px solid #8F8F8F;
+  border: 1px solid #cecece;
   box-sizing: border-box;
   border-radius: 5px;
   width: 232px;
-  height: 64px;
+  height: 58px;
   margin-right: 41px;
   font-size: 16px;
   color:#A4A4A4;
@@ -207,22 +212,34 @@ body{
 
 .tipoimo{
   padding: 3%;
-  border: 1px solid #8F8F8F;
-  box-sizing: border-box;
+  border: 1px solid #cecece;
+  box-sizing: border-box; 
   border-radius: 5px;
   width: 232px;
-  height: 64px;
+  background-image: url('./images/arrow.png') 95.5% 50% no-repeat;
+  height: 58px;
   margin-right: 41px;
   font-size: 16px;
   color:#A4A4A4;
   }
 
-  .filbusc{
-    width: 160px;
-    height: 64px;
-    background: #44318A;
-    border-radius: 5px;
-    border: 0px;
-    color: #FFFFFF;
-    font-size: 20px;
-  }
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  width: 100%;
+} */
+
+.filbusc{
+  width: 160px;
+  height: 58px;
+  background: #44318A;
+  border-radius: 5px;
+  border: 0px;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.butt{
+  margin-left: 18px;
+}

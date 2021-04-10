@@ -37,9 +37,20 @@
             
             <div class="filter-imoveis">
                 <form>
-                    <input class="localit" type="localizacao" name="localizacao" placeholder="Localização">
-                    <input class="tipoimo" type="imovel" name="imovel" placeholder="Tipo de Imóvel"><i class="fa fa-angle-down"></i>
-                    <button class="filbusc"> Busca </button>
+                    <div class="localbusc">
+                        <input class="localit" type="text" name="Localizacao" placeholder="LOCALIZAÇÃO">
+                    </div>
+                    <div class="imovelbusc">
+                        <select name="select" class="tipoimo" placeholder="Tipo Imóvel" form="carform">
+                            <option value="tipo">TIPO DE IMÓVEL</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Ap">Apartamento</option>
+                            <option value="Loft">Loft</option>
+                          </select>
+                    </div>
+                    <div class="butt">
+                        <button class="filbusc"> Busca </button>
+                    </div>
                 </form> 
             </div>
         </div>
