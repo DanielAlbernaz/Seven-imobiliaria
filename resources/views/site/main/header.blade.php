@@ -14,10 +14,14 @@
 
                 <div class="telphone">
                     <div class="icontel">
-                        <img src="./images/tel.png" alt="">
+                        <a href="">
+                            <img src="./images/tel.png" alt="">
+                        </a>
                     </div>
                     <div class="number">
-                        <a href=""><font color="white">(XX) XXXX-XXXX</font></a>
+                        <a href="">
+                            <font color="white">(XX) XXXX-XXXX</font>
+                        </a>
                     </div>
                 </div>
 

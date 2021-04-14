@@ -7,7 +7,7 @@
     </div>
 
     <!-- Formulario de Pesquisa/Filtro -->
-
+<div class="filtro-busca">
     <div class="buscas">
         <div class="filterbusca">
             <div class="imoveis">
@@ -55,6 +55,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <div class="divisao">
         <a href=""> kajshfdarufhauhf </a>
