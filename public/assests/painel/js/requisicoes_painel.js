@@ -11,6 +11,10 @@ function mask(o, f) {
     }, 1);
   }
 
+  $(document).ready(function(){
+	$("#cep").mask("99.999-999");
+});
+
   function mphone(v) {
     var r = v.replace(/\D/g, "");
     r = r.replace(/^0/, "");
@@ -223,6 +227,7 @@ function destroyImage(id)
         }
       })
 }
+
 
 
 

@@ -157,13 +157,6 @@ toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright ali
                         </ul>
                     </li>
 
-                    <li class="">
-                        <a href="#" ><i class="fa fa-file-image-o"></i><span class="nav-label">Instalações</span> <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li class=""><a href="{{ url('sistema/editar-instalacoes/1') }}">Alterar</a></li>
-                        </ul>
-                    </li>
-
 
 
             </div>

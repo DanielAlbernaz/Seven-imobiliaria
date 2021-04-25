@@ -25,14 +25,6 @@ Form::sb_FormCropImage('Imagem institucional', $institucional->imagem, false);
 
 Form::sb_FormTextHtml('Descrição', 'text', 'Escre uma descrição', $institucional->text, true);
 
-Form::sb_FormTextHtml('Missão', 'missao', 'Defina uma descrição para missão', $institucional->missao, true);
-
-Form::sb_FormTextHtml('Visão', 'visao', 'Defina uma descrição para visão', $institucional->visao, true);
-
-Form::sb_FormTextHtml('Valores', 'valores', 'Defina uma descrição para valores', $institucional->valores, true);
-
-Form::sb_FormText('Link vídeo', 'url', 'Informar a url do vídeo', '800px', $institucional->url, false);
-
 $opcaoAba[] = "<option value='1'  ".($institucional->status == 1 ? 'selected="selected" ' : '')." >Ativo</option>";
 $opcaoAba[] .= "<option value='2'  ".($institucional->status == 0 ? 'selected="selected" ' : '')." >Inativo</option>";
 Form::sb_FormSelect('Status', 'status', $opcaoAba, '250px', true);
@@ -79,7 +71,7 @@ Form::sb_FormEnd();
 
    bs_modal.on('shown.bs.modal', function() {
        cropper = new Cropper(image, {
-           aspectRatio: 800 / 800,
+           aspectRatio: 1191 / 646,
            viewMode: 1,
            preview: '.preview'
        });
@@ -90,8 +82,8 @@ Form::sb_FormEnd();
 
    $("#crop").click(function() {
        canvas = cropper.getCroppedCanvas({
-           width: 800,
-           height: 800,
+           width: 1191,
+           height: 646,
        });
 
        canvas.toBlob(function(blob) {
