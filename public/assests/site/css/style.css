@@ -428,13 +428,14 @@ a.active, a:hover{
 .container{
   width: 100%;
   padding: 2% 9%;
-  display: inline-flex;
+  float: left;
 }
 
 .cont{
-  width: 30%;
+  width: 32%;
   height: 438px;
-  margin-right: 7%;
+  margin-right: 2%;
+  float: left;
 }
 .cont img{
   max-width: 100%;
@@ -516,6 +517,20 @@ a.active, a:hover{
   width: 100%;
   font-size: 20px;
 }
+@media (max-width: 960px){
+  .cont{
+    width: 49%;
+  }
+  .cont:nth-child(2n+0){
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 968px){
+  .cont:nth-child(3){
+    margin-right: 0;
+  }
+}
 
 .con-col{
   width: 30%;
@@ -535,19 +550,12 @@ a.active, a:hover{
   display: inline-flex;
 }
 
-.mapa{
+/* .mapa{
   width: 100%;
-}
+} */
 
 .mapa iframe{
   width: 100%;
-}
-
-
-@media (max-width: 858p){
-  .container{
-    display: block;
-  }
 }
 
 /* PAGINA IMOVEIS */
