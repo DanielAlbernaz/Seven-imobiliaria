@@ -21,7 +21,7 @@ Form::sb_FormBegin('Cadastro de banner', 'validation');
 
 Form::sb_FormText('Título', 'title', 'Defina um título para o banner', '800px', '', true);
 
-Form::sb_FormCropImage('Imagem banner', '', true);
+Form::sb_FormCropImage('Imagem banner (1920px X 715px) ', '', true);
 
 Form::sb_FormText('Link redirecionamento', 'url', 'Defina uma url para redirecionar', '800px', '', false);
 
