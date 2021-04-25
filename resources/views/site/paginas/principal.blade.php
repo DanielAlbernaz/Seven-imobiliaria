@@ -12,53 +12,151 @@
         <div class="filterbusca">
             <div class="imoveis">
 
-                <div class="every decoration back">
-                    <a href="">Todos os imóveis</a>
-                </div>
-
-                <div class="venda decoration bord">
-                    <a href="">Venda</a>
-                </div>
-
-                <div class="aluguel decoration bord">
-                    <a href="">Aluguel</a>
-                </div>
-
-                <div class="busc">
-                    <div class="iconbusc">
-                        <a href=""><img src="./images/plus.png" alt=""></a>
-                    </div>
-                    <div class="labelbusc">
-                        <a href=""> Busca Avançada</a>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="filter-imoveis">
                 <form>
-                    <div class="localbusc">
-                        <input class="localit" type="text" name="Localizacao" placeholder="LOCALIZAÇÃO">
+                <!-- Type -->
+                    <div class="search-type">
+                        <label class="todos active" onclick="todos()"><input class="first-tab" name="tab" checked="checked" type="radio">Todos os imóveis</label>
+                        <label class="venda" onclick="venda()"><input name="tab" type="radio">Venda</label>
+                        <label class="aluguel" onclick="aluguel()"><input name="tab" type="radio">Aluguel</label>
+                        <div class="search-type-arrow"></div>
                     </div>
-                    <div class="imovelbusc">
-                        <select name="select" class="tipoimo" placeholder="Tipo Imóvel" form="carform">
-                            <option value="tipo">TIPO DE IMÓVEL</option>
-                            <option value="Casa">Casa</option>
-                            <option value="Ap">Apartamento</option>
-                            <option value="Loft">Loft</option>
-                          </select>
-                    </div>
-                    <div class="butt">
-                        <button class="filbusc"> Busca </button>
+                    
+                    <div class="locali-tipo">
+                            <div class="localbusc">
+                                <input class="localit" type="text" name="Localizacao" placeholder="LOCALIZAÇÃO">
+                            </div>
+                            <div class="imovelbusc">
+                                <select name="select" class="tipoimo" placeholder="Tipo Imóvel" form="carform">
+                                    <option value="tipo">TIPO DE IMÓVEL</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Ap">Apartamento</option>
+                                    <option value="Loft">Loft</option>
+                                </select>
+                            </div>
+                            <div class="butt">
+                                <button class="filbusc"> Busca </button>
+                            </div>
                     </div>
                 </form> 
+
             </div>
         </div>
     </div>
 </div>
 
-    <div class="divisao">
-        <a href=""> kajshfdarufhauhf </a>
-    </div>
+<div class="espace">
+    <label for="">
+        <img src="./images/vector.png" alt="">
+    </label>
+    <li>
+        <p>Ordenado por:</p>
+        <a href=""> MAIS RECENTEPOPULARESPREÇO (ALTO PARA BAIXO)PREÇO (BAIXO PARA ALTO)
+        </a>
+    </li>
+    <label for="" class="labeul">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./images/view_module.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./images/view_list.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </label>
+</div>
+
+<div class="encontrados">
+    <h2>
+       150 Imoveis Encontrados
+    </h2>
+</div>
+
+<div class="container">
+
+    <article class="cont">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+           <h1> Casas</h1>
+        </div>
+        <div class="">
+            <p>Lorem ipsum dolor sit amet, consectetur </p>
+        </div>
+        <div>
+        </div>
+    </article>
+
+    <article class="cont">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+            <a href="">  </a>
+            <h4></h4>
+            <p></p>
+        </div>
+    </article>
+
+    <article class="con-col">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+            <a href="">  </a>
+            <h4></h4>
+            <p></p>
+        </div>
+    </article>
+</div>
+
+<div class="mais-imoveis">
+    <ul>
+        <li>
+            <img src="./images/undo.png" alt="">
+        </li>
+        <li>
+            <a href="">Ver Mais</a>
+        </li>
+    </ul>
+</div>
+
+<div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244584.17760433958!2d-49.44435535229793!3d-16.695499894685117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-BR!2sbr!4v1618516401539!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div class="encontrados">
+    <h2>
+       Imovies recentes
+    </h2>
+</div>
+
+<div class="container">
+
+    <article class="cont">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+            <a href="">  </a>
+            <h4></h4>
+            <p></p>
+        </div>
+    </article>
+
+    <article class="cont">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+            <a href="">  </a>
+            <h4></h4>
+            <p></p>
+        </div>
+    </article>
+
+    <article class="con-col">
+        <a href="#"><img src="./images/rectangle.png" alt=""></a>
+        <div class="">
+            <a href="">  </a>
+            <h4></h4>
+            <p></p>
+        </div>
+    </article>
+</div>
     
 @include('site.main.footer')
