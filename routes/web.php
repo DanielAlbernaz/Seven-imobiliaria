@@ -29,11 +29,9 @@ Route::post('/logar', [ControllerUser::class, 'logar'])->name('logar');
 /**Usuários painel */
 
 
-Route::get('/imovel/{id}', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
-Route::get('/imovel', 'App\Http\Controllers\Site\ControllerImovel@index')->name('imovel');
-Route::get('/contato', 'App\Http\Controllers\Site\ControllerContato@index')->name('contato');
-
-
+//Parametro nessa rota para detalhes do mimove
+Route::get('/imovel', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
+Route::get('/imoveis', 'App\Http\Controllers\Site\ControllerImovel@index')->name('imoveis');
 Route::get('/institucional', 'App\Http\Controllers\Site\ControllerInstitucional@index')->name('institucional');
 
 
