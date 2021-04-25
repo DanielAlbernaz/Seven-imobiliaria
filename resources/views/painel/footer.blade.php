@@ -79,6 +79,7 @@
 
 <script>
 $(document).ready(function() {
+
     $("#wizard").steps();
 // setTimeout(function() {
 // toastr.options = {

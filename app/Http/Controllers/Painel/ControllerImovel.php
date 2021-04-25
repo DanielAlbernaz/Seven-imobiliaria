@@ -47,13 +47,22 @@ class ControllerImovel extends Controller
                 $request->image_file= $localStorage . "/" . $namePhoto;
             }
 
-            $objImovel->title = $request->title;
-            $objImovel->vazao = $request->vazao;
-            $objImovel->motor = $request->motor;
-            $objImovel->consumo = $request->consumo;
-            $objImovel->abertura = $request->abertura;
-            $objImovel->reservatorio = $request->reservatorio;
+            $objImovel->codigo_imovel = $request->codigo_imovel;
+            $objImovel->finalidade = $request->finalidade;
+            $objImovel->tipo_imovel = $request->tipo_imovel;
+            $objImovel->endereco = $request->endereco;
+            $objImovel->bairro = $request->bairro;
+            $objImovel->cidade_estado = $request->cidade_estado;
+            $objImovel->cep = $request->cep;
             $objImovel->text = $request->text;
+            $objImovel->area_util = $request->area_util;
+            $objImovel->area_terreno = $request->area_terreno;
+            $objImovel->area_comum = $request->area_comum;
+            $objImovel->area_total = $request->area_total;
+            $objImovel->area_privativa = $request->area_privativa;
+            $objImovel->area_construida = $request->area_construida;
+            $objImovel->dormitorio = $request->dormitorio;
+            $objImovel->vaga_garagem = $request->vaga_garagem;
             $objImovel->status = $request->status;
             $objImovel->begin_date = ($request->begin_date ? $request->begin_date  : date('Y-m-d H:i:s'));
             $objImovel->end_date = $request->end_date;
@@ -81,13 +90,14 @@ class ControllerImovel extends Controller
  }
 
  function list(Request $request){
+    $this->inactivateDate();
     $imoveis = Imovel::all();
 
     $imoveisList = array();
     for($i = 0; $i < count($imoveis); $i++){
         $imoveisList[$i]['ID'] = $imoveis[$i]->id;
-        $imoveisList[$i]['TÍTULO'] = $imoveis[$i]->title;
-        $imoveisList[$i]['IMAGEM'] = '<img src="'.session('URL_IMG'). $imoveis[$i]->imagem.'" style="width: 100px; overflow: hidden;" >' ;
+        $imoveisList[$i]['CÓDIGO IMÓVEL'] = $imoveis[$i]->codigo_imovel;
+        $imoveisList[$i]['IMAGEM DESTAQUE'] = '<img src="'.session('URL_IMG'). $imoveis[$i]->imagem.'" style="width: 100px; overflow: hidden;" >' ;
         $imoveisList[$i]['INÍCIO EXIBIÇÃO'] = date_format(new DateTime($imoveis[$i]->begin_date), 'd/m/Y H:i:s');
         $imoveisList[$i]['FIM EXIBIÇÃO'] = ($imoveis[$i]->end_date ? date_format(new DateTime($imoveis[$i]->end_date), 'd/m/Y H:i:s') : '');
         $imoveisList[$i]['STATUS'] = $imoveis[$i]->status;
@@ -95,8 +105,8 @@ class ControllerImovel extends Controller
 
     if(count($imoveis) == 0){
         $imoveisList[0]['ID'] = 0;
-        $imoveisList[0]['TÍTULO'] = 0;
-        $imoveisList[0]['IMAGEM'] = 0;
+        $imoveisList[0]['CÓDIGO IMÓVEL'] = 0;
+        $imoveisList[0]['IMAGEM DESTAQUE'] = 0;
         $imoveisList[0]['INÍCIO EXIBIÇÃO'] = 0;
         $imoveisList[0]['FIM EXIBIÇÃO'] = 0;
         $imoveisList[0]['STATUS'] = 0;
@@ -236,13 +246,22 @@ class ControllerImovel extends Controller
         }
 
         $objImovel = Imovel::find($request->id);
-        $objImovel->title = $request->title;
-        $objImovel->vazao = $request->vazao;
-        $objImovel->motor = $request->motor;
-        $objImovel->consumo = $request->consumo;
-        $objImovel->abertura = $request->abertura;
-        $objImovel->reservatorio = $request->reservatorio;
+        $objImovel->codigo_imovel = $request->codigo_imovel;
+        $objImovel->finalidade = $request->finalidade;
+        $objImovel->tipo_imovel = $request->tipo_imovel;
+        $objImovel->endereco = $request->endereco;
+        $objImovel->bairro = $request->bairro;
+        $objImovel->cidade_estado = $request->cidade_estado;
+        $objImovel->cep = $request->cep;
         $objImovel->text = $request->text;
+        $objImovel->area_util = $request->area_util;
+        $objImovel->area_terreno = $request->area_terreno;
+        $objImovel->area_comum = $request->area_comum;
+        $objImovel->area_total = $request->area_total;
+        $objImovel->area_privativa = $request->area_privativa;
+        $objImovel->area_construida = $request->area_construida;
+        $objImovel->dormitorio = $request->dormitorio;
+        $objImovel->vaga_garagem = $request->vaga_garagem;
         $objImovel->status = $request->status;
         $objImovel->begin_date = ($request->begin_date ? $request->begin_date  : date('Y-m-d H:i:s'));
         $objImovel->end_date = $request->end_date;

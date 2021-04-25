@@ -26,17 +26,46 @@ use App\Models\Form;
 
 Form::sb_FormBegin('Alterar imóvel', 'validation');
 
+Form::sb_FormText('Código Imóvel', 'codigo_imovel', 'Defina um código para o imóvel', '250px', $imovel->codigo_imovel, true);
 
-Form::sb_FormText('Título', 'title', 'Defina um título para o produto', '800px', $imovel->title, true);
+$opcaoFinalidade[] = "<option value=''  selected></option>";
+$opcaoFinalidade[] = "<option value='Venda'   ".($imovel->finalidade == 'Venda' ? 'selected="selected" ' : '').">Venda</option>";
+$opcaoFinalidade[] .= "<option value='Aluguel'  ".($imovel->finalidade == 'Aluguel' ? 'selected="selected" ' : '').">Aluguel</option>";
+$opcaoFinalidade[] .= "<option value='Lançamento'  ".($imovel->finalidade == 'Lançamento' ? 'selected="selected" ' : '').">Lançamento</option>";
+Form::sb_FormSelect('Finalidade', 'finalidade', $opcaoFinalidade, '250px', true);
 
-Form::sb_FormText('Vazão de ar', 'vazao', 'Defina um valor para o campo', '200px', $imovel->vazao, false);
-Form::sb_FormText('Motor', 'motor', 'Defina um valor para o campo', '200px', $imovel->motor, false);
-Form::sb_FormText('Consumo elétrico', 'consumo', 'Defina um valor para o campo', '200px', $imovel->consumo, false);
-Form::sb_FormText('Abertura de parede', 'abertura', 'Defina um valor para o campo', '200px', $imovel->abertura, false);
-Form::sb_FormText('Reservatório / peso seco', 'reservatorio', 'Defina um valor para o campo', '200px', $imovel->reservatorio, false);
+$opcaoTipo[] = "<option value=''  ></option>";
+$opcaoTipo[] = "<option value='Apartamento' ".($imovel->tipo_imovel == 'Apartamento' ? 'selected="selected" ' : '')." >Apartamento</option>";
+$opcaoTipo[] .= "<option value='Casa' ".($imovel->tipo_imovel == 'Casa' ? 'selected="selected" ' : '').">Casa</option>";
+$opcaoTipo[] .= "<option value='Casa Comercial' ".($imovel->tipo_imovel == 'Casa Comercial' ? 'selected="selected" ' : '').">Casa Comercial</option>";
+$opcaoTipo[] .= "<option value='Chácara' ".($imovel->tipo_imovel == 'Chácara' ? 'selected="selected" ' : '').">Chácara</option>";
+$opcaoTipo[] .= "<option value='Cobertura'".($imovel->tipo_imovel == 'Cobertura' ? 'selected="selected" ' : '')." >Cobertura</option>";
+$opcaoTipo[] .= "<option value='Flat' ".($imovel->tipo_imovel == 'Flat' ? 'selected="selected" ' : '').">Flat</option>";
+$opcaoTipo[] .= "<option value='Imovel Comercial' ".($imovel->tipo_imovel == 'Imovel Comercial' ? 'selected="selected" ' : '').">Imovel Comercial</option>";
+$opcaoTipo[] .= "<option value='Kitinete' ".($imovel->tipo_imovel == 'Kitinete' ? 'selected="selected" ' : '').">Kitinete</option>";
+$opcaoTipo[] .= "<option value='Loja' ".($imovel->tipo_imovel == 'Loja' ? 'selected="selected" ' : '').">Loja</option>";
+$opcaoTipo[] .= "<option value='Lote' ".($imovel->tipo_imovel == 'Lote' ? 'selected="selected" ' : '').">Lote</option>";
+$opcaoTipo[] .= "<option value='Prédio' ".($imovel->tipo_imovel == 'Prédio' ? 'selected="selected" ' : '').">Prédio</option>";
+$opcaoTipo[] .= "<option value='Salas' ".($imovel->tipo_imovel == 'Salas' ? 'selected="selected" ' : '').">Salas</option>";
+$opcaoTipo[] .= "<option value='Sobrado' ".($imovel->tipo_imovel == 'Sobrado' ? 'selected="selected" ' : '').">Sobrado</option>";
+Form::sb_FormSelect('Tipo imóvel', 'tipo_imovel', $opcaoTipo, '250px', true);
 
+Form::sb_FormText('Endereço', 'endereco', 'Escreva o endereço do imóvel ex: Rua 25...', '800px', $imovel->endereco, true);
+Form::sb_FormText('Bairro', 'bairro', 'Escreva o bairo do imóvel  ex: Jardim America', '800px', $imovel->bairro, true);
+Form::sb_FormText('Cidade / Estado', 'cidade_estado', 'Escreva  a cidade / estado ex: Goiânia - GO', '800px', $imovel->cidade_estado, true);
+Form::sb_FormText('Cep', 'cep', 'Escreva  CEP da rua do imóvel ex: 74-255-470', '250px', $imovel->cep, false);
 
 Form::sb_FormTextHtml('Descrição produto', 'text', 'Escre uma descrição', $imovel->text, false);
+
+Form::sb_FormNumber('Dormitorios', 'dormitorio', 'Defina a quantidade dormitorios', '200px', $imovel->dormitorio, false);
+Form::sb_FormNumber('Vaga garagem', 'vaga_garagem', 'Defina a quantidade de garagens', '200px', $imovel->vaga_garagem, false);
+Form::sb_FormText('Área útil', 'area_util', 'Defina um valor para área útil ex: 360m²', '200px', $imovel->area_util, false);
+Form::sb_FormText('Área terreno', 'area_terreno', 'Defina um valor para área terreno ex: 360m²', '200px', $imovel->area_terreno, false);
+Form::sb_FormText('Área comum', 'area_comum', 'Defina um valor para área comum ex: 360m²', '200px', $imovel->area_comum, false);
+Form::sb_FormText('Área total', 'area_total', 'Defina um valor para área total ex: 360m²', '200px', $imovel->area_total, false);
+Form::sb_FormText('Área privativa', 'area_privativa', 'Defina um valor para área privativa ex: 360m²', '200px', $imovel->area_privativa, false);
+Form::sb_FormText('Área útil', 'area_construida', 'Defina um valor para área construida ex: 360m²', '200px', $imovel->area_construida, false);
+
 
 
 Form::sb_FormCropImage('Imagem produto', $imovel->imagem, false);
