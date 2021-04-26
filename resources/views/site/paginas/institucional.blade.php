@@ -2,7 +2,7 @@
 
 <div class="imagem-quemsomos">
     <div class="img-quem">
-        <img src="./images/quem.png" alt="">
+        <img class="resp-img" src="./images/quem.png" alt="">
     </div>
     <div class="text-foot">
         <h1> Quem Somos</h1>
@@ -10,8 +10,8 @@
 </div>
 
 <div class="imagem-footer">
-    <div class="img-footer">
-            <img src="./images/imgfooter.png" alt="">
+    <div class="img-footer ">
+            <img class="resp-img" src="./images/imgfooter.png" alt="">
     </div>
 </div>
 
