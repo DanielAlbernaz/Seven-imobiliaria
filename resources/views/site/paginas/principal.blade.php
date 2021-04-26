@@ -437,7 +437,16 @@
 </div>
 
 <div class="mapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244584.17760433958!2d-49.44435535229793!3d-16.695499894685117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-BR!2sbr!4v1618516401539!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244584.17760433958!2d-49.44435535229793!3d-16.695499894685117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-BR!2sbr!4v1618516401539!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> --}}
+
+<div id="map-container" class="homepage-map margin-bottom-0">
+
+    <div id="map">
+        <!-- map goes here -->
+    </div>
+
+
+</div>
 </div>
 
 <div class="encontrados">

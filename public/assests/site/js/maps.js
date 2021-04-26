@@ -23,27 +23,27 @@
 
 
         //console.log(window.location.href);
-        // function ajax(){
-        //     var imoveis = '';
-        //     $.ajax({
-        //         url: pathSite + 'ctrl.php?acao=buscar-imoveis-lista-mapa',
-        //         dataType: 'json',
-        //         type: 'POST',
-        //         data:{id: 1,
-        //         url: window.location.href},
-        //         async: false,
-        //         success: function(obj) {
-        //             if (obj.situacao == "sucess") {
-        //                 imoveis = obj.valor;
-        //                  //console.log(imoveis);
-        //                 //console.log( obj.url);
-        //             }
-        //             imoveis = obj.valor;
-        //             //console.log(obj.url);
-        //         }
-        //     });
-        //     return imoveis;
-        // }
+        function ajax(){
+            var imoveis = '';
+            $.ajax({
+                url:  'ctrl.php?acao=buscar-imoveis-lista-mapa',
+                dataType: 'json',
+                type: 'POST',
+                data:{id: 1,
+                url: window.location.href},
+                async: false,
+                success: function(obj) {
+                    if (obj.situacao == "sucess") {
+                        imoveis = obj.valor;
+                         //console.log(imoveis);
+                        //console.log( obj.url);
+                    }
+                    imoveis = obj.valor;
+                    //console.log(obj.url);
+                }
+            });
+            return imoveis;
+        }
 
 
         var imovel = ajax();
