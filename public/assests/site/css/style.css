@@ -41,9 +41,13 @@ header{
 
 
 .telphone{
-  width: 18%;
+  width: 80%;
   padding-top: 18px;
   display: inline-flex;
+}
+
+.telphone li{
+  margin-right: 2%;
 }
 
 .icontel{
@@ -56,11 +60,20 @@ header{
   .telwidth{
     display: none;
   }
+  .icontel{
+    display: block;
+  }
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
   .telphone{
-    width: 44%;
+    width: 90%;
+  }
+  .icontel{
+    display: block;
+  }
+  .rectangle{
+    height: 80px;
   }
 }
 
@@ -218,7 +231,7 @@ a.active, a:hover{
 }
 
 .fund img{
-  max-width: 100%;
+  width: 100%;
 }
 
 
@@ -236,6 +249,37 @@ a.active, a:hover{
   margin-right: 20%;
   margin-top: -110px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+@media (max-width: 690px){
+  .buscas{
+    width: 100%;
+    margin: 0;
+  }
+  .search-type{
+    display: grid !important;
+  }
+  .locali-tipo{
+    display: block !important;
+  }
+  .localbusc{
+    width: 100% !important;
+    padding-bottom: 2%;
+  }
+  .imovelbusc{
+    width: 100% !important;
+    padding-bottom: 2%;
+  }
+  .butt{
+    width: 50% !important;
+    margin-left: 0 !important;
+  }
+  .espace li p {
+    width: 30% !important;
+}
+  .espace{
+    display: grid !important;
+  }
 }
 
 .filterbusca{
@@ -376,7 +420,7 @@ a.active, a:hover{
 
 .espace{
   width: 100%;
-  height: 105px;
+  height: auto;
   background: #ffffff;
   padding-top: 3%;
   padding-left: 9%;
@@ -384,26 +428,18 @@ a.active, a:hover{
   display: inline-flex;
 }
 
+
+.label-imagem{
+  display: flex;
+  width: 15%;  
+}
+
 .espace li{
-  margin-left: 1%;
-  width: 80%;
-  display: inline-flex;
+  margin-left: 4%;
 }
 
-.espace li p{
-  width: 13%;
-}
-
-.espace li a{
-  width: 89%;
-}
-
-.espace ul li{
-  display: inline-flex;
-}
-
-.labeul{
-  width: 10%;
+.espace label{
+  margin-right: 2%;
 }
 
 .labeul ul{
@@ -428,16 +464,17 @@ a.active, a:hover{
 .container{
   width: 100%;
   padding: 2% 9%;
-  display: inline-flex;
+  float: left;
 }
 
 .cont{
-  width: 30%;
+  width: 32%;
   height: 438px;
-  margin-right: 7%;
+  margin-right: 2%;
+  float: left;
 }
 .cont img{
-  max-width: 100%;
+  width: 100%;
 }
 
 .cont-imagem{
@@ -517,6 +554,43 @@ a.active, a:hover{
   font-size: 20px;
 }
 
+@media (max-width: 680px) {
+  .cont{
+    width: 100% !important;
+  }
+  .cont:nth-child(1){
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 678px) {
+  .cont{
+    width: 100%;
+  }
+  .cont:nth-child(1){
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 960px){
+  .cont{
+    width: 49%;
+  }
+  .cont:nth-child(2n+0){
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 968px){
+  .cont:nth-child(3n+0){
+    margin-right: 0;
+  }
+  .cont:nth-child(3){
+    margin-right: 0;
+  }
+}
+
 .con-col{
   width: 30%;
   height: 438px;
@@ -535,19 +609,12 @@ a.active, a:hover{
   display: inline-flex;
 }
 
-.mapa{
+/* .mapa{
   width: 100%;
-}
+} */
 
 .mapa iframe{
   width: 100%;
-}
-
-
-@media (max-width: 858p){
-  .container{
-    display: block;
-  }
 }
 
 /* PAGINA IMOVEIS */
@@ -810,6 +877,7 @@ a.active, a:hover{
 footer{
   background: #443184;
   width: 100%;
+  float: left;
 }
 .footer{
   width: 100%;

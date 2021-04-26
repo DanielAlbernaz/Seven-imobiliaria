@@ -45,28 +45,32 @@
 </div>
 
 <div class="espace">
+    <label  class="label-imagem" for="">
+        <li>
+            <img src="./images/vector.png" alt="">
+        </li>
+        <li>
+            <p> Ordenado por:</p>
+        </li>
+    </label>
+
     <label for="">
-        <img src="./images/vector.png" alt="">
+        <a href=""> MAIS RECENTES </a>
     </label>
-    <li>
-        <p>Ordenado por:</p>
-        <a href=""> MAIS RECENTEPOPULARESPREÇO (ALTO PARA BAIXO)PREÇO (BAIXO PARA ALTO)
-        </a>
+
+    <label for="">
+        <a href=""> POPULARES </a>
+    </label>
+
+    <label for="">
+        <a href=""> PREÇO (ALTO PARA BAIXO) </a>
+    </label>
+
+    <label for="">
+        <a href=""> PREÇO (BAIXO PARA ALTO) </a>
+    </label>
+
     </li>
-    <label for="" class="labeul">
-        <ul>
-            <li>
-                <a href="">
-                    <img src="./images/view_module.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/view_list.png" alt="">
-                </a>
-            </li>
-        </ul>
-    </label>
 </div>
 
 <div class="encontrados">
@@ -190,6 +194,235 @@
         </div>
 
     </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+            <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
 </div>
 
 <div class="mais-imoveis">
@@ -328,6 +561,123 @@
         </div>
 
     </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+    <article class="cont">
+
+        <div class="cont-imagem">
+
+            <img src="./images/rectangle.png" alt="">
+
+            <div class="cont-aluguel">
+                <span class="span-tipo"> Aluguel </span>
+            </div>
+            <div class="cont-valor">
+                <span class="span-valor"> R$ 500,00</span>
+            </div>
+        </div>
+
+        <div class="cont-casas">
+           <h1> Casas </h1>
+        </div>
+
+        <div class="cont-local">
+            <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+        </div>
+
+        <div class="cont-quanti">
+            <ul>
+                <li>
+                    <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                </li>
+                <li>
+                    <p> <i class="fa fa-car"></i> 0 vaga</p>
+                </li>
+            </ul>
+        </div>
+
+    </article>
+
+
+
 </div>
 
 @include('site.main.footer')
