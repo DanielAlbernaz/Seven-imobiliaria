@@ -3,7 +3,7 @@
     <div class="fold">
         <div class="fund">
             <img src="./images/fold.png" alt="">
-        </div>    
+        </div>
     </div>
 
     <!-- Formulario de Pesquisa/Filtro -->
@@ -20,7 +20,7 @@
                         <label class="aluguel" onclick="aluguel()"><input name="tab" type="radio">Aluguel</label>
                         <div class="search-type-arrow"></div>
                     </div>
-                    
+
                     <div class="locali-tipo">
                             <div class="localbusc">
                                 <input class="localit" type="text" name="Localizacao" placeholder="LOCALIZAÇÃO">
@@ -37,7 +37,7 @@
                                 <button class="filbusc"> Busca </button>
                             </div>
                     </div>
-                </form> 
+                </form>
 
             </div>
         </div>
@@ -49,7 +49,7 @@
         <li>
             <img src="./images/vector.png" alt="">
         </li>
-        <li>    
+        <li>
             <p> Ordenado por:</p>
         </li>
     </label>
@@ -59,17 +59,17 @@
     </label>
 
     <label for="">
-        <a href=""> POPULARES </a> 
+        <a href=""> POPULARES </a>
     </label>
 
     <label for="">
-        <a href=""> PREÇO (ALTO PARA BAIXO) </a> 
+        <a href=""> PREÇO (ALTO PARA BAIXO) </a>
     </label>
 
     <label for="">
-        <a href=""> PREÇO (BAIXO PARA ALTO) </a>    
+        <a href=""> PREÇO (BAIXO PARA ALTO) </a>
     </label>
-        
+
     </li>
 </div>
 
@@ -84,7 +84,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -122,7 +122,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -160,7 +160,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -198,7 +198,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -236,7 +236,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -274,7 +274,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -312,7 +312,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -348,9 +348,9 @@
     </article>
 
     <article class="cont">
-    
+
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -386,9 +386,9 @@
     </article>
 
     <article class="cont">
-    
+
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -451,7 +451,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -489,7 +489,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -527,7 +527,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -565,7 +565,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -603,7 +603,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -641,7 +641,7 @@
     <article class="cont">
 
         <div class="cont-imagem">
-            
+
             <img src="./images/rectangle.png" alt="">
 
             <div class="cont-aluguel">
@@ -680,5 +680,4 @@
 
 </div>
 
-    
 @include('site.main.footer')

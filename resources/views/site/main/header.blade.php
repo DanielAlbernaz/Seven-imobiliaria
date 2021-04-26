@@ -50,14 +50,14 @@
 
         </div>
 
-        <nav>   
+        <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa fa-bars"></i>
             </label>
             <label for="" class="logo">
-                <img src="./images/LOGO.PNG" alt="">    
-            </label> 
+                <img src="./images/LOGO.PNG" alt="">
+            </label>
 
             <ul>
                 <li>
