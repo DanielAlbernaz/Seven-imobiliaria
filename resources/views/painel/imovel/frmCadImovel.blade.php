@@ -44,6 +44,7 @@ $opcaoTipo[] .= "<option value='Sobrado' >Sobrado</option>";
 $opcaoTipo[] .= "<option value='Chácara' >Chácara</option>";
 Form::sb_FormSelect('Tipo imóvel', 'tipo_imovel', $opcaoTipo, '250px', true);
 
+Form::sb_FormMoney('Valor', 'valor', 'Escreva o valor de venda ou aluguel', '250px', $imovel->valor, false);
 Form::sb_FormText('Endereço', 'endereco', 'Escreva o endereço do imóvel ex: Rua 25...', '800px', '', true);
 Form::sb_FormText('Bairro', 'bairro', 'Escreva o bairo do imóvel  ex: Jardim America', '800px', '', true);
 Form::sb_FormText('Cidade / Estado', 'cidade_estado', 'Escreva  a cidade / estado ex: Goiânia - GO', '800px', '', true);
@@ -52,6 +53,7 @@ Form::sb_FormText('Cep', 'cep', 'Escreva  CEP da rua do imóvel ex: 74-255-470',
 Form::sb_FormTextHtml('Descrição produto', 'text', 'Escre uma descrição', '', false);
 
 Form::sb_FormNumber('Dormitorios', 'dormitorio', 'Defina a quantidade dormitorios', '200px', '', false);
+Form::sb_FormNumber('Suítes', 'suites', 'Defina a quantidade suítes', '200px', $imovel->suites, false);
 Form::sb_FormNumber('Vaga garagem', 'vaga_garagem', 'Defina a quantidade de garagens', '200px', '', false);
 Form::sb_FormText('Área útil', 'area_util', 'Defina um valor para área útil ex: 360m²', '200px', '', false);
 Form::sb_FormText('Área terreno', 'area_terreno', 'Defina um valor para área terreno ex: 360m²', '200px', '', false);

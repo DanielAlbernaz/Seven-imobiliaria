@@ -66,6 +66,7 @@
 <script src="{{asset('assests/painel/js/clone/dist/jquery.cloner.min.js')}}"></script>
 
 <script src="{{asset('assests/painel/js/plugins/steps/jquery.steps.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
 
 {{-- <script>

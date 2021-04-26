@@ -49,6 +49,8 @@ class ControllerImovel extends Controller
 
             $objImovel->codigo_imovel = $request->codigo_imovel;
             $objImovel->finalidade = $request->finalidade;
+            $objImovel->suites = $request->suites;
+            $objImovel->valor = $request->valor;
             $objImovel->tipo_imovel = $request->tipo_imovel;
             $objImovel->endereco = $request->endereco;
             $objImovel->bairro = $request->bairro;
@@ -257,6 +259,8 @@ class ControllerImovel extends Controller
         $objImovel->area_util = $request->area_util;
         $objImovel->area_terreno = $request->area_terreno;
         $objImovel->area_comum = $request->area_comum;
+        $objImovel->suites = $request->suites;
+        $objImovel->valor = $request->valor;
         $objImovel->area_total = $request->area_total;
         $objImovel->area_privativa = $request->area_privativa;
         $objImovel->area_construida = $request->area_construida;
