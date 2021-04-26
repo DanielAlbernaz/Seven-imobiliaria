@@ -84,7 +84,7 @@
 </body>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
- <script src="{{asset('assests/site/js/custom.js')}}"></script>z
+ <script src="{{asset('assests/site/js/custom.js')}}"></script>
 
  <script>
 
