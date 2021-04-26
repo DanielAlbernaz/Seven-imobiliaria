@@ -14,8 +14,6 @@ class ControllerImovel extends Controller
     function detail(Request $request)
     {
 
-        print_rpre($request->id);
-        print_rpre($request->teste);exit;
         return view('site.paginas.imovel');
     }
 
