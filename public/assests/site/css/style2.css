@@ -2762,7 +2762,7 @@ span.like-icon {
 
 }
 
-.csm-trigger:before { 	
+.csm-trigger:before {
 	display: inline-block;
 	transition: 0.3s ease-in-out;
 	writing-mode: vertical-rl;
@@ -11269,7 +11269,7 @@ body .counter-boxes-inside-parallax .counter-box-icon i,
 	button.button.social-login.via-facebook { background-color: #3b5998; }
 	button.button.social-login.via-gplus { background-color: #dd4b39; }
 	button.button.social-login.via-twitter { background-color: #1da1f2; }
-	
+
 	body .pac-container {
 		border-radius: 0 0 4px 4px;
 		box-shadow: none;

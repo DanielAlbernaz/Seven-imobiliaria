@@ -11,8 +11,11 @@ class ControllerImovel extends Controller
     {
         return view('site.paginas.imoveis');
     }
-    function detail()
+    function detail(Request $request)
     {
+
+        print_rpre($request->id);
+        print_rpre($request->teste);exit;
         return view('site.paginas.imovel');
     }
 

@@ -51,15 +51,15 @@
             <label for="" class="labeltop"> Blog </label>
                 <ul class="articul">
                     <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet, 
+                        <a href="">Lorem ipsum dolor sit amet,
                             consectetur</a>
                     </li>
                     <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet, 
+                        <a href="">Lorem ipsum dolor sit amet,
                             consectetur</a>
                     </li>
                     <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet, 
+                        <a href="">Lorem ipsum dolor sit amet,
                             consectetur</a>
                     </li>
                 </ul>
@@ -84,7 +84,7 @@
 </body>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
- <script src="{{asset('assests/site/js/custom.js')}}"></script>
+ <script src="{{asset('assests/site/js/custom.js')}}"></script>z
 
  <script>
 
@@ -107,7 +107,7 @@
     }
 
     $(document).ready(function() {
-    
+
         function searchTypeButtons() {
              $('.search-type label.active input[type="radio"]').prop('checked', true);
              var buttonWidth = $('.search-type label.active').width();
@@ -132,6 +132,6 @@
             });
         }
     });
-    
+
     </script>
 </html>

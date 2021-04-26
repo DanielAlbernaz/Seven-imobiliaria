@@ -30,7 +30,7 @@ Route::post('/logar', [ControllerUser::class, 'logar'])->name('logar');
 
 
 //Parametro nessa rota para detalhes do mimove
-Route::get('/imovel', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
+Route::get('/imovel/{id?}/{teste?}/', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
 Route::get('/imoveis', 'App\Http\Controllers\Site\ControllerImovel@index')->name('imoveis');
 Route::get('/institucional', 'App\Http\Controllers\Site\ControllerInstitucional@index')->name('institucional');
 
