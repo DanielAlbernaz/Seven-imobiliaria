@@ -59,7 +59,7 @@
                 <img src="./images/LOGO.PNG" alt="">
             </label>
 
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="#">Lorem</a>
                 </li>

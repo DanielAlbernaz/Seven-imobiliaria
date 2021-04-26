@@ -47,24 +47,6 @@
                 </ul>
         </article>
 
-        <article class="colun-3 reta left-colun ">
-            <label for="" class="labeltop"> Blog </label>
-                <ul class="articul">
-                    <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet,
-                            consectetur</a>
-                    </li>
-                    <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet,
-                            consectetur</a>
-                    </li>
-                    <li class="a">
-                        <a href="">Lorem ipsum dolor sit amet,
-                            consectetur</a>
-                    </li>
-                </ul>
-        </article>
-
         <article class="colun-4 reta left-colu">
             <dd>
                 <a href=""><i class="fa fa-facebook"></i></a>
