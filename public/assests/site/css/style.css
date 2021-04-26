@@ -469,8 +469,9 @@ a.active, a:hover{
 
 .cont{
   width: 32%;
-  height: 438px;
+  height: auto;
   margin-right: 2%;
+  margin-bottom: 2%;
   float: left;
 }
 .cont img{
