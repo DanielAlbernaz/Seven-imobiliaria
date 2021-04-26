@@ -198,6 +198,7 @@ nav ul{
     display: block;
   }
   .topnav a{
+    float: none;
     display: none;
   }
 }
@@ -219,6 +220,7 @@ nav ul{
     top: 0;
   }
   .topnav.responsive a {
+    float: right;
     display: block;
     text-align: center;
   }
