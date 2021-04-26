@@ -25,16 +25,14 @@
                                     <p><i class="fa fa-phone"></i> (XX) XXXX-XXXX</p>
                                 </a>
                             </li>
+                            <li>
+                                <a href="">
+                                    <font color="white">
+                                        <i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur.
+                                    </font>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-
-                    <div class="locali">
-                        <div class="amet">
-                            <a href=""><font color="white"><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur.</font></a>
-                        </div>
-                        {{-- <div class="iconamet">
-                            <a href=""><img src="./images/room.png" alt=""></a>
-                        </div> --}}
                     </div>
 
                     <div class="iconredes">
