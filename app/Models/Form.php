@@ -42,6 +42,22 @@ class Form extends Model
 
         return print_r($form);
     }
+    static function sb_FormMoney($name = '', $id = '', $title = '', $width = '', $value = '', $required = false)
+    {
+        $form = '';
+
+        $form .='<div class="form-group  row ">';
+            $form .='<label class="col-sm-2 col-form-label">'. $name .' '.($required == true ? '<label  style="color: red">*</label>' : '').'</label>';
+
+            $form .='<div class="col-sm-10" input>';
+            $form .='<span class="error"></span>';
+                $form .='<input type="text" id="'. $id .'" class="form-control money" name="'. $id .'" value="'. ($value ? $value : '') .'" title="'. $title .'" style="width:'. $width .'" '.($required == true ? 'required' : '').'></div>';
+            $form .='</div>';
+
+        $form .='<div class="hr-line-dashed"></div>';
+
+        return print_r($form);
+    }
     static function sb_FormNumber($name = '', $id = '', $title = '', $width = '', $value = '', $required = false)
     {
         $form = '';

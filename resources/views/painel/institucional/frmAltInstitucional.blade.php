@@ -71,7 +71,7 @@ Form::sb_FormEnd();
 
    bs_modal.on('shown.bs.modal', function() {
        cropper = new Cropper(image, {
-           aspectRatio: 1191 / 646,
+           aspectRatio: 1000 / 667,
            viewMode: 1,
            preview: '.preview'
        });
@@ -82,8 +82,8 @@ Form::sb_FormEnd();
 
    $("#crop").click(function() {
        canvas = cropper.getCroppedCanvas({
-           width: 1191,
-           height: 646,
+           width: 1000,
+           height: 667,
        });
 
        canvas.toBlob(function(blob) {

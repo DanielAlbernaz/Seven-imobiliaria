@@ -11,6 +11,8 @@ function mask(o, f) {
     }, 1);
   }
 
+
+
   $(document).ready(function(){
 	$("#cep").mask("99.999-999");
 });
@@ -228,6 +230,15 @@ function destroyImage(id)
       })
 }
 
-
+$(document).ready(function(){
+    $('.money').mask('000.000.000.000.000,00', {reverse: true});
+  });
+  $(".money").focusout(function(){
+    if($(this).val().length <= 2){
+      temp = $(this).val()
+      var newNum = temp + ",00"
+      $(this).val(newNum)
+    }
+  })
 
 
