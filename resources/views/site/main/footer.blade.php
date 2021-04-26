@@ -47,7 +47,7 @@
                 </ul>
         </article>
 
-        <article class="colun-4 reta left-colu">
+        <article class="colun-4 left-colu">
             <dd>
                 <a href=""><i class="fa fa-facebook"></i></a>
             </dd>

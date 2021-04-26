@@ -51,31 +51,33 @@
         </div>
 
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
-            <label for="" class="logo">
-                <img src="./images/LOGO.PNG" alt="">
-            </label>
-
-            <ul class="menu">
-                <li>
-                    <a href="#">Lorem</a>
-                </li>
-                <li>
-                    <a href="#">Lorem</a>
-                </li>
-                <li>
-                    <a href="#">Lorem</a>
-                </li>
-                <li>
-                    <a href="">Lorem</a>
-                </li>
-                <li>
+            
+            <div class="topnav" id="myTopnav">
+                <label for="" class="logo">
+                    <img src="./images/LOGO.PNG" alt="">
+                </label>
+                <ul>
                     <a href=""><img src="./images/turned_in_not.png" alt=""></a>
-                </li>
-            </ul>
-
+                    <a href="#home" class="">Loren</a>
+                    <a href="#news">Loren</a>
+                    <a href="#contact">Loren</a>
+                    <a href="#about">Loren</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </ul>
+              </div>
         </nav>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
     </header>
