@@ -630,17 +630,17 @@ nav ul{
 
 @media (max-width: 776px){
   .text-foot h1 {
-    font-size: 31px !important;
+    font-size: 16px !important;
   }
+}
+
+@media (max-width: 776px){
   .text-foot h1 {
     font-size: 32px !important;
   }
 }
 
 @media (max-width: 1280px){
-  .text-foot h1 {
-    font-size: 31px !important;
-  }
   .text-foot h1 {
     font-size: 32px !important;
   }
@@ -1119,7 +1119,20 @@ article dd a{
   color: black;
 }
 
+.titulo-termo{
+  text-align: center;
+  padding: 7.8% 0;
+  position: relative;
+  font-size: 32px;
+  color: black;
+}
+
 .texto-politica{
+  width: 100%;
+  padding: 5% 10%;
+}
+
+.texto-termo{
   width: 100%;
   padding: 5% 10%;
 }
@@ -1132,12 +1145,19 @@ article dd a{
   text-align: justify;
   padding-top: 5%;
 }
+
+.image-termo{
+  width: 100%;
+  height: 312px;
+  position: absolute;
+}
+
+
 @media (max-width: 1180px){
   .titulo-politica{
     font-size: 25px;
     padding: 7.8% 0;
   }
-
 }
 
 @media (max-width: 680px){
@@ -1145,12 +1165,20 @@ article dd a{
     font-size: 19px;
     padding: 7.8% 0;
 }
+.titulo-termo {
+  font-size: 19px;
+  padding: 7.8% 0;
+}
 }
 
 @media (max-width: 480px){
 .titulo-politica {
     font-size: 12px;
     padding: 7.8% 0;
+}
+.titulo-termo {
+  font-size: 12px;
+  padding: 7.8% 0;
 }
 }
 
