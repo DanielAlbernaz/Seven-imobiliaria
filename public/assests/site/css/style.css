@@ -85,6 +85,15 @@ left: 0;
   .rectangle{
     height: 80px;
   }
+  .about-contat {
+    display: block !important;
+  }
+  .contat{
+    width: 100% !important;
+  }
+  .textabout{
+    width: 100% !important;
+  }
 }
 
 .telwid{
