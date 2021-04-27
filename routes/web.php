@@ -33,6 +33,8 @@ Route::post('/logar', [ControllerUser::class, 'logar'])->name('logar');
 Route::get('/imovel', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
 Route::get('/imoveis', 'App\Http\Controllers\Site\ControllerImovel@index')->name('imoveis');
 Route::get('/institucional', 'App\Http\Controllers\Site\ControllerInstitucional@index')->name('institucional');
+Route::get('/politica-privacidade', 'App\Http\Controllers\Site\ControllerPolitica@index')->name('politica');
+Route::get('/termo-uso', 'App\Http\Controllers\Site\ControllerTermo@index')->name('termo');
 
 
 Route::middleware(['auth'])->group(function() {
