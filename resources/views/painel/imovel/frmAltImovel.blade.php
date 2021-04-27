@@ -67,6 +67,8 @@ Form::sb_FormText('Área comum', 'area_comum', 'Defina um valor para área comum
 Form::sb_FormText('Área total', 'area_total', 'Defina um valor para área total ex: 360m²', '200px', $imovel->area_total, false);
 Form::sb_FormText('Área privativa', 'area_privativa', 'Defina um valor para área privativa ex: 360m²', '200px', $imovel->area_privativa, false);
 Form::sb_FormText('Área útil', 'area_construida', 'Defina um valor para área construida ex: 360m²', '200px', $imovel->area_construida, false);
+Form::sb_FormText('Latitude', 'latitude', 'Defina uma rota para desenhar o caminho no mapa', '200px', $imovel->latitude, false);
+Form::sb_FormText('Longitude', 'longitude', 'Definauma rota para desenhar o caminho no mapa²', '200px', $imovel->longitude, false);
 
 
 
