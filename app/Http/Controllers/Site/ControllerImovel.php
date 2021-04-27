@@ -37,7 +37,7 @@ class ControllerImovel extends Controller
 
         $imoveis = $query->get();
 
-        print_rpre($imoveis);exit;
+
 
         // if($request->finalidade == 'todos'){
         //     $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
