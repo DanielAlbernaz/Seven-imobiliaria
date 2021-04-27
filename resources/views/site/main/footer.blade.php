@@ -71,6 +71,14 @@
         <label for=""> COPYRIGHT © 2021. TODOS OS DIREITOS RESERVADOS - SEVEN CORRETORES ASSOCIADOS. </label>
     </div>
 
+    <div class="ccw_plugin chatbot">
+        <div class="animate_animated animate_bounce ">
+                <a target="blank" href="https://web.whatsapp.com/send?phone=5562984080282&amp;text=Olá, tenho interesse!" class="animateanimated animate_bounce">
+                    <img class="img-icon ccw-analytics" id="style-3" data-ccw="style-3" style="height: 65px;" src="images/whatsapp.png" alt="WhatsApp chat">
+                </a>
+        </div>
+    </div>
+    
 </footer>
 
 </body>
