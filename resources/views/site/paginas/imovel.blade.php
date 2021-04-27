@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="calculo-area">
-                    <ul>
+                    <ul class="">
                         <li>
                             <dd>
                                 <img src="./images/mdi.png" alt="">
