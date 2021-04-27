@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="calculo-area">
-                    <ul>
+                    <ul class="">
                         <li>
                             <dd>
                                 <img src="./images/mdi.png" alt="">
@@ -113,7 +113,7 @@
                         </li>
                     </ul>
                     <ul class="cod-area area-float">
-                        <li>
+                        <li class="float-calculo">
                             <dd>
                                 <img src="./images/clarity.png" alt="">
                             </dd>

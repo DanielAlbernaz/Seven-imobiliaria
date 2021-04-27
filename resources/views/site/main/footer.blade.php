@@ -14,10 +14,10 @@
             </a>
             <ul>
                 <li class="a">
-                    <a href="">Política de Privacidade</a>
+                    <a href="politica-privacidade">Política de Privacidade</a>
                 </li>
                 <li class="a">
-                    <a href="">Termos de uso</a>
+                    <a href="termo-uso">Termos de uso</a>
                 </li>
                 <li class="a">
                     <img src="./images/room.png" alt="">

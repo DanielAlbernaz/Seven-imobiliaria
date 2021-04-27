@@ -65,7 +65,7 @@
 
         <nav>
 
-            <div class="topnav" id="myTopnav" onclick="redirect()" style="cursor :pointer;" >
+            <div class="topnav" id="myTopnav" style="cursor :pointer;" >
                     <label style="cursor :pointer;"  for="" class="logo">
                             <img style="cursor :pointer;" src="./images/LOGO.PNG" alt="">
                     </label>
@@ -73,7 +73,9 @@
                     <a href="institucional">CONTATO</a>
                     <a href="imoveis">IMÓVEIS</a>
                     <a href="institucional" class="">QUEM SOMOS</a>
-                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </ul>
               </div>
         </nav>
