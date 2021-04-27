@@ -22,7 +22,7 @@ class ControllerImovel extends Controller
     }
     function busca(Request $request)
     {
-        print_rpre($request->all());
+
         $query = DB::table('imoveis')->where('status', 1);
 
         if($request->tipo){
@@ -34,39 +34,32 @@ class ControllerImovel extends Controller
         if($request->localizacao){
             $query->where('endereco', 'like', '%' . $request->localizacao . '%');
         }
+        if($request->codigo_imovel ){
+            $query->where('codigo_imovel', $request->codigo_imovel);
+        }
+        if($request->dormitorio == 'Venda' ){
+            $query->where('dormitorio', $request->dormitorio);
+        }
+        if($request->vaga ){
+            $query->where('vaga_garagem', $request->vaga);
+        }
+        if($request->suites ){
+            $query->where('suites', $request->suites);
+        }
 
         $imoveis = $query->get();
-
-
-        // if($request->finalidade == 'todos'){
-        //     $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-
-        // }elseif($request->localizacao){
-        //     $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-        // }elseif(!$request->localizacao && !$request->tipo){
-        //     $imoveis = Imovel::where('finalidade', $request->finalidade)->get();
-        // }else{
-        //     $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->get();
-        // }
 
         return view('site.paginas.imoveis', compact('imoveis'));
     }
 
-    // function buscar(Request $request)
-    // {
-    //     print_rpre($request->all());exit;
-    //     if($reque;st->finalidade == 'todos'){
-    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-    //     }elseif($request->localizacao){
-    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-    //     }elseif(!$request->localizacao && !$request->tipo){
-    //         $imoveis = Imovel::where('finalidade', $request->finalidade)->get();
-    //     }else{
-    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->get();
-    //     }
+    function listarLocalizacao(Request $request)
+    {
+        $imoveis = Imovel::all();
 
-    //     return view('site.paginas.imoveis', compact('imoveis'));
-    // }
+        $resposta['situacao'] = 'sucess';
+        $resposta['imoveis'] = $imoveis;
+        return $resposta;
+    }
 
 
 

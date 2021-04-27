@@ -26,20 +26,20 @@
         function ajax(){
             var imoveis = '';
             $.ajax({
-                url:  'ctrl.php?acao=buscar-imoveis-lista-mapa',
+                url:  'buscar-imoveis-lista-mapa',
                 dataType: 'json',
                 type: 'POST',
+                headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
                 data:{id: 1,
                 url: window.location.href},
                 async: false,
                 success: function(obj) {
                     if (obj.situacao == "sucess") {
-                        imoveis = obj.valor;
-                         //console.log(imoveis);
-                        //console.log( obj.url);
+                       var  imoveis = obj.imoveis;
                     }
-                    imoveis = obj.valor;
-                    //console.log(obj.url);
+
                 }
             });
             return imoveis;
@@ -48,15 +48,17 @@
 
         var imovel = ajax();
         //console.log(imovel);
-
+        console.log(imovel[0]['endereco']);
 
         var locations = [];
         var imoveis = '';
         for (var i = 0; i < imovel.length; i++) {
-            if(imovel[i]['latitude']){
-                var imoveis = [locationData(pathSite + 'detalhes-imovel/id/' + imovel[i]['id'] + '/tipo/' + imovel[i]['tipo_url'] + '/codigo/' + imovel[i]['codigo'] + '/cidade/' + imovel[i]['cidade'] + '/bairro/' + imovel[i]['bairro'], (imovel[i]['preco'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['preco'] + '/mês'), (imovel[i]['condominio'] == 0.00 ? '' : 'Condomínio:' + imovel[i]['condominio']), imovel[i]['img'], imovel[i]['imovel'], imovel[i]['endereco']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
-                locations.push(imoveis);
-            }
+
+            // if(imovel[i]['latitude']){
+            //     var imoveis = [locationData(pathSite + 'detalhes-imovel/id/' + imovel[i]['id'] + '/tipo/' + imovel[i]['tipo_url'] + '/codigo/' + imovel[i]['codigo'] + '/cidade/' + imovel[i]['cidade'] + '/bairro/' + imovel[i]['bairro'], (imovel[i]['preco'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['preco'] + '/mês'), (imovel[i]['condominio'] == 0.00 ? '' : 'Condomínio:' + imovel[i]['condominio']), imovel[i]['img'], imovel[i]['imovel'], imovel[i]['endereco']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
+
+            //     locations.push(imoveis);
+            // }
 
         }
        // console.log(locations);

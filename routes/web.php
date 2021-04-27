@@ -37,6 +37,7 @@ Route::get('/politica-privacidade', 'App\Http\Controllers\Site\ControllerPolitic
 Route::get('/termo-uso', 'App\Http\Controllers\Site\ControllerTermo@index')->name('termo');
 Route::post('/busca-imoveis', 'App\Http\Controllers\Site\ControllerImovel@busca')->name('busca');
 Route::get('/buscar', 'App\Http\Controllers\Site\ControllerImovel@buscar')->name('buscar');
+Route::post('/buscar-imoveis-lista-mapa', 'App\Http\Controllers\Site\ControllerImovel@listarLocalizacao')->name('listarLocalizacao');
 
 
 Route::middleware(['auth'])->group(function() {

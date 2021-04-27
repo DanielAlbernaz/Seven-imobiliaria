@@ -66,7 +66,7 @@
         <nav>
 
             <div class="topnav" id="myTopnav" style="cursor :pointer;" >
-                    <label style="cursor :pointer;"  for="" class="logo">
+                    <label onclick="redirect()" style="cursor :pointer;"  for="" class="logo">
                             <img style="cursor :pointer;" src="./images/LOGO.PNG" alt="">
                     </label>
                 <ul>
