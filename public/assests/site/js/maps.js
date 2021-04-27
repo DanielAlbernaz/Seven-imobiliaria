@@ -37,30 +37,29 @@
                 async: false,
                 success: function(obj) {
                     if (obj.situacao == "sucess") {
-                       var  imoveis = obj.imoveis;
+                        imovel = obj.imoveis;
                     }
 
                 }
             });
-            return imoveis;
+            return imovel;
         }
 
 
         var imovel = ajax();
-        //console.log(imovel);
-        console.log(imovel[0]['endereco']);
+        console.log(imovel.length);
+
 
         var locations = [];
         var imoveis = '';
-        for (var i = 0; i < imovel.length; i++) {
+        // for (var i = 0; i < imovel.length; i++) {
+        //     if(imovel[i]['latitude']){
+        //         var imoveis = [locationData('www.google.com', imovel[i]['valor'] , imovel[i]['endereco'] , imovel[i]['imagem'], imovel[i]['codigo_imovel'], imovel[i]['endereco'])];
+        //         locations.push(imoveis);
+        //     }
 
-            // if(imovel[i]['latitude']){
-            //     var imoveis = [locationData(pathSite + 'detalhes-imovel/id/' + imovel[i]['id'] + '/tipo/' + imovel[i]['tipo_url'] + '/codigo/' + imovel[i]['codigo'] + '/cidade/' + imovel[i]['cidade'] + '/bairro/' + imovel[i]['bairro'], (imovel[i]['preco'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['preco'] + '/mês'), (imovel[i]['condominio'] == 0.00 ? '' : 'Condomínio:' + imovel[i]['condominio']), imovel[i]['img'], imovel[i]['imovel'], imovel[i]['endereco']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
-
-            //     locations.push(imoveis);
-            // }
-
-        }
+        // }
+        [locationData('single-property-page-1.html', '$275,000', '$520 / sq ft', 'images/listing-01.jpg', 'Eagle Apartmets', "9364 School St. Lynchburg, NY "), 40.7427837, -73.11445617675781, 1, markerIcon],
        // console.log(locations);
 
         var mapZoomAttr = $('#map').attr('data-map-zoom');
