@@ -598,6 +598,23 @@ nav ul{
   .cont:nth-child(2n+0){
     margin-right: 0;
   }
+  .imovelcasa{
+    display: block !important;
+  }
+  .form-imovel{
+    width: 100% !important;
+    padding-top: 7% !important;
+  }
+  .imovel-container{
+    width: 100% !important;
+  }
+  .descrit-imovel {
+    display: block !important;
+  }
+  .descrit-descrit {
+    width: 100% !important;
+  }
+  
 }
 
 @media (min-width: 968px){
@@ -710,6 +727,11 @@ nav ul{
 
 .calculo-color{
   color:#4a4a4a !important;
+}
+
+.float-calculo{
+  float: right;
+  margin-right: 4%;
 }
 
 .calculo-area li{
