@@ -1083,6 +1083,9 @@ article dd a{
   .left-colun{
     margin-left: 23% !important;
   }
+  .text-foot h1{
+    font-size: 70px !important;
+  }
 }
 
 
@@ -1118,7 +1121,9 @@ article dd a{
 }
 
 .text-foot h1{
+  color: #000000;
   font-size: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 
