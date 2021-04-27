@@ -22,21 +22,20 @@ class ControllerImovel extends Controller
     }
     function busca(Request $request)
     {
-
+        print_rpre($request->all());
         $query = DB::table('imoveis')->where('status', 1);
 
         if($request->tipo){
             $query->where('tipo_imovel', $request->tipo);
         }
-        if($request->finalidade){
-            $query->where('tipo_imovel', $request->finalidade);
+        if($request->finalidade == 'Venda' || $request->finalidade == 'Aluguel' ){
+            $query->where('finalidade', $request->finalidade);
         }
         if($request->localizacao){
             $query->where('endereco', 'like', '%' . $request->localizacao . '%');
         }
 
         $imoveis = $query->get();
-
 
 
         // if($request->finalidade == 'todos'){
@@ -52,21 +51,22 @@ class ControllerImovel extends Controller
 
         return view('site.paginas.imoveis', compact('imoveis'));
     }
-    function buscar(Request $request)
-    {
-        print_rpre($request->all());exit;
-        if($request->finalidade == 'todos'){
-            $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-        }elseif($request->localizacao){
-            $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
-        }elseif(!$request->localizacao && !$request->tipo){
-            $imoveis = Imovel::where('finalidade', $request->finalidade)->get();
-        }else{
-            $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->get();
-        }
 
-        return view('site.paginas.imoveis', compact('imoveis'));
-    }
+    // function buscar(Request $request)
+    // {
+    //     print_rpre($request->all());exit;
+    //     if($reque;st->finalidade == 'todos'){
+    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
+    //     }elseif($request->localizacao){
+    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->where('endereco', 'like', '%' . $request->localizacao . '%')->get();
+    //     }elseif(!$request->localizacao && !$request->tipo){
+    //         $imoveis = Imovel::where('finalidade', $request->finalidade)->get();
+    //     }else{
+    //         $imoveis = Imovel::where('tipo_imovel', $request->tipo)->where('finalidade', $request->finalidade)->get();
+    //     }
+
+    //     return view('site.paginas.imoveis', compact('imoveis'));
+    // }
 
 
 

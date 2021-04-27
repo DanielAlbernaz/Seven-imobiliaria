@@ -34,7 +34,7 @@
                         <option value="Aluguel">Aluguel</option>
                         <option value="Lancamento">Laçamento</option>
                     </select>
-                    <select name="tipo_imovel" id="tipo_imovel" class="foor-tipo" placeholder="Tipo imóvel" >
+                    <select name="tipo" id="tipo" class="foor-tipo" placeholder="Tipo imóvel" >
                         <option value="">TIPO DE IMÓVEL</option>
                         <option value="Apartamento">Apartamento</option>
                         <option value="Casa">Casa</option>
@@ -122,7 +122,7 @@
                         <p> <i class="fa fa-bed"></i> {{ $imoveis[$i]->dormitorio ?  $imoveis[$i]->dormitorio : '0'  }} Quarto</p>
                     </li>
                     <li>
-                        <p> <i class="fa fa-car"></i> {{ $imoveis[$i]->vaga ?  $imoveis[$i]->vaga : '0'  }} vaga</p>
+                        <p> <i class="fa fa-car"></i> {{ $imoveis[$i]->vaga_garagem ?  $imoveis[$i]->vaga_garagem : '0'  }} vaga</p>
                     </li>
                 </ul>
             </div>

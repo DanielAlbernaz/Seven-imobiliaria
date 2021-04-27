@@ -30,7 +30,7 @@
                     @csrf
                 <!-- Type -->
                     <div class="search-type">
-                        <label class="todos active" onclick="todos()"><input class="first-tab" name="finalidade" value="todos" id="finalidade" checked="checked" type="radio">Todos os imóveis</label>
+                        <label class="todos active" onclick="todos()"><input class="first-tab" name="finalidade"  id="finalidade" checked="checked" type="radio">Todos os imóveis</label>
                         <label class="venda" onclick="venda()"><input name="finalidade" id="finalidade" value="Venda" type="radio">Venda</label>
                         <label class="aluguel" onclick="aluguel()"><input name="finalidade" id="finalidade" value="Aluguel" type="radio">Aluguel</label>
                         <div class="search-type-arrow"></div>
@@ -148,7 +148,7 @@
                         <p> <i class="fa fa-bed"></i> {{ $imoveis[$i]->dormitorio ?  $imoveis[$i]->dormitorio : '0'  }} Quarto</p>
                     </li>
                     <li>
-                        <p> <i class="fa fa-car"></i> {{ $imoveis[$i]->vaga ?  $imoveis[$i]->vaga : '0'  }} vaga</p>
+                        <p> <i class="fa fa-car"></i> {{ $imoveis[$i]->vaga_garagem ?  $imoveis[$i]->vaga_garagem : '0'  }} vaga</p>
                     </li>
                 </ul>
             </div>
@@ -235,7 +235,7 @@
                         <p> <i class="fa fa-bed"></i> {{ $imoveisRecentes[$i]->dormitorio ?  $imoveisRecentes[$i]->dormitorio : '0'  }} Quarto</p>
                     </li>
                     <li>
-                        <p> <i class="fa fa-car"></i> {{ $imoveisRecentes[$i]->vaga ?  $imoveisRecentes[$i]->vaga : '0'  }} vaga</p>
+                        <p> <i class="fa fa-car"></i> {{ $imoveisRecentes[$i]->vaga_garagem ?  $imoveisRecentes[$i]->vaga_garagem : '0'  }} vaga</p>
                     </li>
                 </ul>
             </div>
