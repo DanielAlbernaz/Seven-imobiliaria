@@ -1137,7 +1137,7 @@ article dd a{
     font-size: 25px;
     padding: 7.8% 0;
   }
-  
+
 }
 
 @media (max-width: 680px){
@@ -1429,3 +1429,45 @@ margin-bottom: 3.5%;
 }
 
 /* Css da busca menu prncipal */
+
+
+.blocoInformacoesImovel{
+    background-color: #f1f1f1;
+    color: #707070;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 6%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    transition: 0.25s;
+    margin: 15px 0;
+}
+
+.property-features{
+    width: 100%;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 3;
+    -webkit-columns: 3;
+}
+
+.property-features li {
+    color: #333;
+    display: block;
+    margin: 0 0 7px 0;
+    padding: 0;
+}
+
+@media (max-width: 991px){
+    .property-features {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+}
+
+.margin-top-0 {
+    margin-top: 0 !important;
+}

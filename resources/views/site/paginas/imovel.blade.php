@@ -4,10 +4,10 @@
     <div class="name">
         <ul>
             <li>
-                <h1>Casas</h1>
+                <h1>{{ $imovel->tipo_imovel }}</h1>
             </li>
             <li class="nameespace">
-                <a href="">Lorem ipsum dolor sit amet, consectetur.</a>
+                <i class="fa fa-map-marker"></i>   <a href="">{{ $imovel->endereco }}</a>
             </li>
             <li class="nameroom">
                 <img src="./images/roomm.png" alt="">
@@ -41,93 +41,30 @@
                     </ul>
                 </div>
 
-                <div class="calculo-area">
-                    <ul class="">
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área Útil:</p>
-                            </dd>
-                            <dd>
-                                <p> 48.00 m<sup>3</sub></p>
-                            </dd>
-                        </li>
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área Terreno:</p>
-                            </dd>
-                            <dd>
-                                <p> 0.00 m<sup>2</sub></p>
-                            </dd>
-                        </li>
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área Comum:</p>
-                            </dd>
-                            <dd>
-                                <p> 0.00 m<sup>2</sub></p>
-                            </dd>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área total:</p>
-                            </dd>
-                            <dd>
-                                <p> 48.00 m<sup>3</sub></p>
-                                </dd>
-                        </li>
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área Privativa:</p>
-                            </dd>
-                            <dd>
-                                <p> 0.00 m<sup>2</sub></p>
-                            </dd>
-                        </li>
-                        <li>
-                            <dd>
-                                <img src="./images/mdi.png" alt="">
-                            </dd>
-                            <dd class="area-marg">
-                                <p class="calculo-color">Área Construída:</p>
-                            </dd>
-                            <dd>
-                                <p> 48.00 m<sup>2</sub></p>
-                            </dd>
-                        </li>
-                    </ul>
-                    <ul class="cod-area area-float">
-                        <li class="float-calculo">
-                            <dd>
-                                <img src="./images/clarity.png" alt="">
-                            </dd>
-                            <dd>
-                                <p class="calculo-color">Código Imóvel:</p>
-                            </dd>
-                            <dd>
-                                <p> 3807 </p>
-                            </dd>
-                        </li>
-                    </ul>
+                <div class="">
+                    <div class="property-description">
+
+                        <div class="blocoInformacoesImovel">
+                            <!-- Details -->
+                            <ul class="property-features margin-top-0">
+                                <li><i class="flaticon-ruler"></i> Área útil: <span class="fontDestaque">48.00m²</span></li>
+
+                                <li><i class="flaticon-ruler"></i> Área Total: <span class="fontDestaque">48.00m²</span></li>
+
+                                <li><i class="flaticon-ruler"></i> Área Terreno: <span class="fontDestaque">0.00m²</span></li>
+
+                                <li><i class="flaticon-ruler"></i> Área Privativa: <span class="fontDestaque">0.00m²</span></li>
+
+                                <li><i class="flaticon-ruler"></i> Área Comum: <span class="fontDestaque">0.00m²</span></li>
+
+                                <li><i class="flaticon-ruler"></i> Área Construída: <span class="fontDestaque">48.00m²</span></li>
+
+                                <li><i class="im im-icon-Home-2" style="padding-left: 20px;"></i> <b>Código Imóvel: 3807</b></li>
+                        </ul>
+                        </div>
+                </div>
                 </div>
             </div>
-
             <div class="form-imovel">
 
                 <div class="vecto">
@@ -242,55 +179,7 @@
                     <div class="frase-descrit">
                         <ul>
                             <li>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item-descrit">
-                    <div class="img-descrit">
-                        <ul>
-                            <li>
-                                <img src="./images/la_award.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="frase-descrit">
-                        <ul>
-                            <li>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item-descrit">
-                    <div class="img-descrit">
-                        <ul>
-                            <li>
-                                <img src="./images/la_bolt.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="frase-descrit">
-                        <ul>
-                            <li>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item-descrit">
-                    <div class="img-descrit">
-                        <ul>
-                            <li>
-                                <img src="./images/la_brush.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="frase-descrit">
-                        <ul>
-                            <li>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                {!! $imovel->text!!}
                             </li>
                         </ul>
                     </div>
@@ -307,15 +196,7 @@
                         <img src="./images/wpf_security-checked.png" alt="">
                     </div>
 
-                    <div class="text-securit">
-                        <h3>LOREM IPSUM DOLOR</h3>
-                    </div>
 
-                    <div class="texto-securit-2">
-                        <p>Lorem ipsum dolor sit
-                            amet, consectetur.
-                        </p>
-                    </div>
 
                 </div>
             </div>
@@ -332,47 +213,9 @@
         <article class="cont">
 
             <div class="cont-imagem">
-    
-                <img src="./images/rectangle.png" alt="">
-    
-                <div class="cont-aluguel">
-                    <span class="span-tipo"> Aluguel </span>
-                </div>
-                <div class="cont-valor">
-                    <span class="span-valor"> R$ 500,00</span>
-                </div>
-            </div>
-    
-            <div class="cont-casas">
-               <h1> Casas </h1>
-            </div>
-    
-            <div class="cont-local">
-                <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
-            </div>
-    
-            <div class="cont-quanti">
-                <ul>
-                    <li>
-                        <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
-                    </li>
-                    <li>
-                        <p> <i class="fa fa-bed"></i> 0 Quarto</p>
-                    </li>
-                    <li>
-                        <p> <i class="fa fa-car"></i> 0 vaga</p>
-                    </li>
-                </ul>
-            </div>
-    
-        </article>
-        
-        <article class="cont">
 
-            <div class="cont-imagem">
-    
                 <img src="./images/rectangle.png" alt="">
-    
+
                 <div class="cont-aluguel">
                     <span class="span-tipo"> Aluguel </span>
                 </div>
@@ -380,15 +223,15 @@
                     <span class="span-valor"> R$ 500,00</span>
                 </div>
             </div>
-    
+
             <div class="cont-casas">
                <h1> Casas </h1>
             </div>
-    
+
             <div class="cont-local">
                 <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
             </div>
-    
+
             <div class="cont-quanti">
                 <ul>
                     <li>
@@ -402,15 +245,15 @@
                     </li>
                 </ul>
             </div>
-    
+
         </article>
 
         <article class="cont">
 
             <div class="cont-imagem">
-    
+
                 <img src="./images/rectangle.png" alt="">
-    
+
                 <div class="cont-aluguel">
                     <span class="span-tipo"> Aluguel </span>
                 </div>
@@ -418,15 +261,15 @@
                     <span class="span-valor"> R$ 500,00</span>
                 </div>
             </div>
-    
+
             <div class="cont-casas">
                <h1> Casas </h1>
             </div>
-    
+
             <div class="cont-local">
                 <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
             </div>
-    
+
             <div class="cont-quanti">
                 <ul>
                     <li>
@@ -440,10 +283,48 @@
                     </li>
                 </ul>
             </div>
-    
+
         </article>
-        
+
+        <article class="cont">
+
+            <div class="cont-imagem">
+
+                <img src="./images/rectangle.png" alt="">
+
+                <div class="cont-aluguel">
+                    <span class="span-tipo"> Aluguel </span>
+                </div>
+                <div class="cont-valor">
+                    <span class="span-valor"> R$ 500,00</span>
+                </div>
+            </div>
+
+            <div class="cont-casas">
+               <h1> Casas </h1>
+            </div>
+
+            <div class="cont-local">
+                <p><i class="fa fa-map-marker"></i> Lorem ipsum dolor sit amet, consectetur  </p>
+            </div>
+
+            <div class="cont-quanti">
+                <ul>
+                    <li>
+                        <p><i class="fa fa-arrows-alt"></i> 480.00m</p>
+                    </li>
+                    <li>
+                        <p> <i class="fa fa-bed"></i> 0 Quarto</p>
+                    </li>
+                    <li>
+                        <p> <i class="fa fa-car"></i> 0 vaga</p>
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
     </div>
 
-    
+
 @include('site.main.footer')

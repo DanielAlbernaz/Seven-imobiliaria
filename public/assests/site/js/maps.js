@@ -49,14 +49,12 @@
         var imovel = ajax();
         console.log(imovel.length);
 
-        var locations = [
-            [locationData(pathSite+'single-property-page-1.html', '$275,000', '$520 / sq ft', 'images/listing-01.jpg', 'Eagle Apartmets', "9364 School St. Lynchburg, NY "), -16.6782504, -49.2334694, 1, markerIcon],
-        ];
+
         var locations = [];
         var imoveis = '';
         for (var i = 0; i < imovel.length; i++) {
             if(imovel[i]['latitude']){
-                var imoveis = [locationData( 'imoveis/id/' + imovel[i]['id'] , (imovel[i]['valor'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['valor'] + '/mês'), '', pathSite + 'storage/' + imovel[i]['imagem'], imovel[i]['endereco'], imovel[i]['cidade_estado']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
+                var imoveis = [locationData( 'imovel/id/' + imovel[i]['id'] , (imovel[i]['valor'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['valor'] + '/mês'), '', pathSite + 'storage/' + imovel[i]['imagem'], imovel[i]['endereco'], imovel[i]['cidade_estado']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
                 locations.push(imoveis);
             }
 

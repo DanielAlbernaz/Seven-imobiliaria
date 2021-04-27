@@ -17,8 +17,9 @@ class ControllerImovel extends Controller
     }
     function detail(Request $request)
     {
+        $imovel = Imovel::find($request->id);
 
-        return view('site.paginas.imovel');
+        return view('site.paginas.imovel', compact('imovel'));
     }
     function busca(Request $request)
     {
