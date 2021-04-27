@@ -85,6 +85,15 @@ left: 0;
   .rectangle{
     height: 80px;
   }
+  .about-contat {
+    display: block !important;
+  }
+  .contat{
+    width: 100% !important;
+  }
+  .textabout{
+    width: 100% !important;
+  }
 }
 
 .telwid{
@@ -619,6 +628,24 @@ nav ul{
   }
 }
 
+@media (max-width: 776px){
+  .text-foot h1 {
+    font-size: 31px !important;
+  }
+  .text-foot h1 {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 1280px){
+  .text-foot h1 {
+    font-size: 31px !important;
+  }
+  .text-foot h1 {
+    font-size: 32px !important;
+  }
+}
+
 .con-col{
   width: 30%;
   height: 438px;
@@ -1056,6 +1083,9 @@ article dd a{
   .left-colun{
     margin-left: 23% !important;
   }
+  .text-foot h1{
+    font-size: 70px !important;
+  }
 }
 
 
@@ -1091,7 +1121,9 @@ article dd a{
 }
 
 .text-foot h1{
+  color: #000000;
   font-size: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
 
