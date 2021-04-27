@@ -37,7 +37,7 @@ class ControllerImovel extends Controller
         if($request->codigo_imovel ){
             $query->where('codigo_imovel', $request->codigo_imovel);
         }
-        if($request->dormitorio == 'Venda' ){
+        if($request->dormitorio ){
             $query->where('dormitorio', $request->dormitorio);
         }
         if($request->vaga ){

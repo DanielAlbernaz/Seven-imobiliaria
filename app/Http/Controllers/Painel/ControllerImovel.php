@@ -72,6 +72,8 @@ class ControllerImovel extends Controller
             $objImovel->begin_date = ($request->begin_date ? $request->begin_date  : date('Y-m-d H:i:s'));
             $objImovel->end_date = $request->end_date;
             $objImovel->imagem = $request->image_file;
+            $objImovel->latitude = $request->latitude;
+            $objImovel->longitude = $request->longitude;
             $objImovel->save();
 
             /**Log */
@@ -274,6 +276,8 @@ class ControllerImovel extends Controller
         $objImovel->begin_date = ($request->begin_date ? $request->begin_date  : date('Y-m-d H:i:s'));
         $objImovel->end_date = $request->end_date;
         $objImovel->imagem =  ($request->image_file ? $request->image_file : $request->imgOld);
+        $objImovel->latitude = $request->latitude;
+        $objImovel->longitude = $request->longitude;
         $objImovel->save();
 
         /**Log */

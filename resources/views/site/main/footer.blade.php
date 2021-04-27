@@ -78,7 +78,7 @@
                 </a>
         </div>
     </div>
-    
+
 </footer>
 
 </body>
@@ -86,6 +86,24 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVt0KZlGvIJYBxTod0Fm33ZL9DriWeSqk&amp;signed_in=true&amp;libraries=places&amp;callback=initMap"></script>
  <script src="{{asset('assests/site/js/custom.js')}}"></script>
+
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/chosen.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/magnific-popup.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/owl.carousel.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/rangeSlider.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/sticky-kit.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/mmenu.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/tooltips.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/masonry.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/jquery.counterup.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/custom.js')}}"></script>
+
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/infobox.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/markerclusterer.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('assests/site/js/scripts/search.js')}}"></script>
+
+
  <script src="{{asset('assests/site/js/maps.js')}}"></script>
  <script src="{{asset('assests/site/js/main.js')}}"></script>
 

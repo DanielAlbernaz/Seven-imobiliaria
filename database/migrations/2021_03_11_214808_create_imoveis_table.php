@@ -34,6 +34,8 @@ class CreateImoveisTable extends Migration
             $table->string('area_privativa')->nullable();
             $table->string('area_construida')->nullable();
             $table->string('dormitorio')->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->string('vaga_garagem')->nullable();
             $table->text('text')->nullable();
             $table->integer('status')->nullable();

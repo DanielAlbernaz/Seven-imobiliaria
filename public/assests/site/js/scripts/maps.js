@@ -4,7 +4,7 @@
         path: 'M19.9,0c-0.2,0-1.6,0-1.8,0C8.8,0.6,1.4,8.2,1.4,17.8c0,1.4,0.2,3.1,0.5,4.2c-0.1-0.1,0.5,1.9,0.8,2.6c0.4,1,0.7,2.1,1.2,3 c2,3.6,6.2,9.7,14.6,18.5c0.2,0.2,0.4,0.5,0.6,0.7c0,0,0,0,0,0c0,0,0,0,0,0c0.2-0.2,0.4-0.5,0.6-0.7c8.4-8.7,12.5-14.8,14.6-18.5 c0.5-0.9,0.9-2,1.3-3c0.3-0.7,0.9-2.6,0.8-2.5c0.3-1.1,0.5-2.7,0.5-4.1C36.7,8.4,29.3,0.6,19.9,0z M2.2,22.9 C2.2,22.9,2.2,22.9,2.2,22.9C2.2,22.9,2.2,22.9,2.2,22.9C2.2,22.9,3,25.2,2.2,22.9z M19.1,26.8c-5.2,0-9.4-4.2-9.4-9.4 s4.2-9.4,9.4-9.4c5.2,0,9.4,4.2,9.4,9.4S24.3,26.8,19.1,26.8z M36,22.9C35.2,25.2,36,22.9,36,22.9C36,22.9,36,22.9,36,22.9 C36,22.9,36,22.9,36,22.9z M13.8,17.3a5.3,5.3 0 1,0 10.6,0a5.3,5.3 0 1,0 -10.6,0',
         strokeOpacity: 0,
         strokeWeight: 1,
-        fillColor: '#44318A',
+        fillColor: '#F58634',
         fillOpacity: 1,
         rotation: 0,
         scale: 1,
@@ -20,50 +20,47 @@
         function locationData(locationURL, locationPrice, locationPriceDetails, locationImg, locationTitle, locationAddress) {
             return ('<a href="' + locationURL + '" class="listing-img-container"><div class="infoBox-close"><i class="fa fa-times"></i></div><div class="listing-img-content"><span class="listing-price">' + locationPrice + '<i>' + locationPriceDetails + '</i></span></div><img src="' + locationImg + '" alt=""></a><div class="listing-content"><div class="listing-title"><h4><a href="' + locationURL + '">' + locationTitle + '</a></h4><p>' + locationAddress + '</p></div></div>')
         }
+        
 
-        const pathSite = window.location.origin + '/';
         //console.log(window.location.href);
         function ajax(){
             var imoveis = '';
             $.ajax({
-                url:  'buscar-imoveis-lista-mapa',
+                url: pathSite + 'ctrl.php?acao=buscar-imoveis-lista-mapa',
                 dataType: 'json',
                 type: 'POST',
-                headers: {
-                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                        },
                 data:{id: 1,
                 url: window.location.href},
                 async: false,
-                success: function(obj) {
+                success: function(obj) {                                            
                     if (obj.situacao == "sucess") {
-                        imovel = obj.imoveis;
-                    }
-
+                        imoveis = obj.valor;
+                         //console.log(imoveis);
+                        //console.log( obj.url);
+                    }   
+                    imoveis = obj.valor;
+                    //console.log(obj.url);
                 }
             });
-            return imovel;
+            return imoveis;
         }
-
-
+            
+        
         var imovel = ajax();
-        console.log(imovel.length);
-
-        var locations = [
-            [locationData(pathSite+'single-property-page-1.html', '$275,000', '$520 / sq ft', 'images/listing-01.jpg', 'Eagle Apartmets', "9364 School St. Lynchburg, NY "), -16.6782504, -49.2334694, 1, markerIcon],
-        ];
+        //console.log(imovel);
+       
+        
         var locations = [];
         var imoveis = '';
         for (var i = 0; i < imovel.length; i++) {
             if(imovel[i]['latitude']){
-                var imoveis = [locationData( 'imoveis/id/' + imovel[i]['id'] , (imovel[i]['valor'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['valor'] + '/mês'), '', pathSite + 'storage/' + imovel[i]['imagem'], imovel[i]['endereco'], imovel[i]['cidade_estado']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
+                var imoveis = [locationData(pathSite + 'detalhes-imovel/id/' + imovel[i]['id'] + '/tipo/' + imovel[i]['tipo_url'] + '/codigo/' + imovel[i]['codigo'] + '/cidade/' + imovel[i]['cidade'] + '/bairro/' + imovel[i]['bairro'], (imovel[i]['preco'] == '0,00' ? 'Sob Consulta' : 'R$' + imovel[i]['preco'] + '/mês'), (imovel[i]['condominio'] == 0.00 ? '' : 'Condomínio:' + imovel[i]['condominio']), imovel[i]['img'], imovel[i]['imovel'], imovel[i]['endereco']),  imovel[i]['latitude'],  imovel[i]['longitude'], 1, markerIcon];
                 locations.push(imoveis);
             }
-
-        }
-
+            
+        }  
        // console.log(locations);
-
+        
         var mapZoomAttr = $('#map').attr('data-map-zoom');
         var mapScrollAttr = $('#map').attr('data-map-scroll');
         if (typeof mapZoomAttr !== typeof undefined && mapZoomAttr !== false) {
