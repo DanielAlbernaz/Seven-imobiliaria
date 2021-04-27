@@ -1015,13 +1015,37 @@ article dd a{
   .left-colu{
     margin-left: 0;
   }
-
+  .buscas-imovies {
+    display: block !important;
+  }
+  .for-12{
+    width: 100% !important;
+  }
+  .for-123{
+    width: 100% !important;
+  }
+  .for{
+    width: 100% !important;
+  }
+  .foor{
+    width: 100% !important;
+  }
 }
 
 
 @media (max-width: 1280px){
-  .left-colu{
+  .form-buscas form{
+    display: block !important;
+  }
+  .foor-1{
+    width: 100% !important;
+  }
+  .foor-2{
+    width: 100% !important;
+  }
 
+  .busc-local{
+    margin-bottom: 2% !important;
   }
 }
 
