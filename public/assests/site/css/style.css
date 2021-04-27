@@ -27,7 +27,7 @@ header{
 
 .rectangle{
   width: 100%;
-  height: 60px;  
+  height: 60px;
   background: #799E41;
   display: inline-flex;
 }
@@ -244,6 +244,8 @@ nav ul{
 
 /* Formulario de Pesquisa */
 .filtro-busca{
+    z-index: 99;
+    position: relative;
   width: 100%;
   /* text-align: center; */
 }
@@ -297,6 +299,7 @@ nav ul{
 .filterbusca{
   width: 100%;
   padding: 6% 4%;
+  z-index: 99;
 }
 
 .imoveis{
@@ -342,7 +345,7 @@ nav ul{
 
 .back{
   background: #799E41;
-  
+
 }
 
 .bord{
@@ -388,21 +391,21 @@ nav ul{
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #cecece;  
+  color: #cecece;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: #cecece;  
+  color: #cecece;
 }
 
-:-ms-input-placeholder {  
-  color: #cecece;  
+:-ms-input-placeholder {
+  color: #cecece;
 }
 
 .tipoimo{
   padding: 3%;
   border: 1px solid #cecece;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border-radius: 5px;
   width: 100%;
   background-image: url('./images/arrow.png') 95.5% 50% no-repeat;
@@ -443,7 +446,7 @@ nav ul{
 
 .label-imagem{
   display: flex;
-  width: 15%;  
+  width: 15%;
 }
 
 .espace li{
@@ -542,6 +545,8 @@ nav ul{
 
 .cont-quanti{
   width: 100%;
+  background-color: #f7f7f7;
+  padding: 30px;
 }
 
 .cont-quanti ul{
@@ -807,7 +812,7 @@ nav ul{
 
 .compra-for{
   width: 100%;
-  padding: 5% 5%;   
+  padding: 5% 5%;
   border: 1px solid grey;
   border-radius: 3px;
   margin-bottom: 6%;
@@ -848,7 +853,7 @@ nav ul{
   padding: 4% 6% 4% 6%;
   border: 1px solid #b4b4b4;
   height: auto;
-  
+
 }
 
 .text-principal{
@@ -939,7 +944,7 @@ article label{
   padding: 3% 0;
 }
 
-.left-colu{ 
+.left-colu{
   margin-left: 29%;
 }
 
@@ -969,11 +974,11 @@ article dd a{
   .left-colun{
     margin-left: 0;
   }
-  
+
   .left-colu{
     margin-left: 0;
   }
-  
+
 
 }
 
@@ -993,7 +998,7 @@ article dd a{
 
 @media (max-width: 1280px){
   .left-colu{
-   
+
   }
 }
 
@@ -1185,7 +1190,7 @@ article dd a{
 
 .for-1{
   width: 100%;
-  padding: 3% 5%;   
+  padding: 3% 5%;
   border: 1px solid grey;
   border-radius: 3px;
   margin-bottom: 6%;
