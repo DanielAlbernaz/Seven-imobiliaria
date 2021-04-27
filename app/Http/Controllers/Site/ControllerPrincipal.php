@@ -31,18 +31,18 @@ class ControllerPrincipal extends Controller
 
         /**Busca imóveis */
         if($request->order == 'id'){
-            $imoveis = Imovel::where('status', 1)->orderBy($request->order, 'Desc')->get();
+            $imoveis = Imovel::where('status', 1)->orderBy($request->order, 'Desc')->limit(6)->get();
         }if($request->order == 'codigo_imovel'){
-            $imoveis = Imovel::where('status', 1)->orderBy($request->order, 'Desc')->get();
+            $imoveis = Imovel::where('status', 1)->orderBy($request->order, 'Desc')->limit(6)->get();
         }if($request->order == 'valor-max'){
-            $imoveis = Imovel::where('status', 1)->orderByDesc('valor')->get();
+            $imoveis = Imovel::where('status', 1)->orderByDesc('valor')->limit(6)->get();
         }if($request->order == 'valor-min'){
-            $imoveis = Imovel::where('status', 1)->orderBy('valor', 'Asc')->get();
+            $imoveis = Imovel::where('status', 1)->orderBy('valor', 'Asc')->limit(6)->get();
         }if(!$request->order){
-            $imoveis = Imovel::where('status', 1)->orderByDesc('id')->get();
+            $imoveis = Imovel::where('status', 1)->orderByDesc('id')->limit(6)->get();
         }
 
-        $imoveisRecentes = Imovel::where('status', 1)->orderByDesc('id')->get();
+        $imoveisRecentes = Imovel::where('status', 1)->orderByDesc('id')->limit(6)->get();
 
         $banner = Banner::where('status', 1)->whereDate('begin_date', '<=', Carbon::now()->toDateString())->get();
 

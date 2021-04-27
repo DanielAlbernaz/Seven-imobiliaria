@@ -43,10 +43,6 @@ class ControllerInstitucional extends Controller
         $objInstitucional = Institucional::find($request->id);
         $objInstitucional->title = $request->title;
         $objInstitucional->text = $request->text;
-        $objInstitucional->visao = $request->visao;
-        $objInstitucional->valores = $request->valores;
-        $objInstitucional->missao = $request->missao;
-        $objInstitucional->url = $request->url;
         $objInstitucional->status = $request->status;
         $objInstitucional->imagem =  ($request->image_file ? $request->image_file : $request->imgOld);
         $objInstitucional->save();

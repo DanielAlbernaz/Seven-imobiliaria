@@ -26,29 +26,40 @@
         <div class="filterbusca">
             <div class="imoveis">
 
-                <form>
+                <form id="frmBuscaPrincipal" method="POST"  action="busca-imoveis" >
+                    @csrf
                 <!-- Type -->
                     <div class="search-type">
-                        <label class="todos active" onclick="todos()"><input class="first-tab" name="tab" checked="checked" type="radio">Todos os imóveis</label>
-                        <label class="venda" onclick="venda()"><input name="tab" type="radio">Venda</label>
-                        <label class="aluguel" onclick="aluguel()"><input name="tab" type="radio">Aluguel</label>
+                        <label class="todos active" onclick="todos()"><input class="first-tab" name="finalidade" value="todos" id="finalidade" checked="checked" type="radio">Todos os imóveis</label>
+                        <label class="venda" onclick="venda()"><input name="finalidade" id="finalidade" value="Venda" type="radio">Venda</label>
+                        <label class="aluguel" onclick="aluguel()"><input name="finalidade" id="finalidade" value="Aluguel" type="radio">Aluguel</label>
                         <div class="search-type-arrow"></div>
                     </div>
 
                     <div class="locali-tipo">
                             <div class="localbusc">
-                                <input class="localit" type="text" name="Localizacao" placeholder="LOCALIZAÇÃO">
+                                <input class="localit" type="text" id="localizacao" name="localizacao" placeholder="LOCALIZAÇÃO">
                             </div>
                             <div class="imovelbusc">
-                                <select name="select" class="tipoimo" placeholder="Tipo Imóvel" form="carform">
-                                    <option value="tipo">TIPO DE IMÓVEL</option>
+                                <select name="tipo" id="tipo" class="tipoimo" placeholder="Tipo Imóvel" >
+                                    <option value="">TIPO DE IMÓVEL</option>
+                                    <option value="Apartamento">Apartamento</option>
                                     <option value="Casa">Casa</option>
-                                    <option value="Ap">Apartamento</option>
-                                    <option value="Loft">Loft</option>
+                                    <option value="Casa Comercial">Casa Comercial</option>
+                                    <option value="Chácara">Chácara</option>
+                                    <option value="Cobertura">Cobertura</option>
+                                    <option value="Imovel Comercial">Imovel Comercial</option>
+                                    <option value="Kitinete">Kitinete</option>
+                                    <option value="Loja">Loja</option>
+                                    <option value="Lote">Lote</option>
+                                    <option value="Prédio">Prédio</option>
+                                    <option value="Salas">Salas</option>
+                                    <option value="Sobrado">Sobrado</option>
+                                    <option value="Chácara">Chácara</option>
                                 </select>
                             </div>
                             <div class="butt">
-                                <button class="filbusc"> Busca </button>
+                                <button class="filbusc" type="submit" style="cursor: pointer" > Busca </button>
                             </div>
                     </div>
                 </form>
@@ -89,7 +100,7 @@
 
 <div class="encontrados">
     <h2>
-       {{ count($imoveis)}} Imoveis Encontrados
+       {{ count($imoveis)}} Imóveis Encontrados
     </h2>
 </div>
 

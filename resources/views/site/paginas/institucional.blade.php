@@ -1,17 +1,20 @@
 @include('site.main.header')
-
+<?php
+    $empresa = exibirInfoEmpresa();
+    $telefones = exibirTelefone();
+?>
 <div class="imagem-quemsomos">
     <div class="img-quem">
         <img class="resp-img" src="./images/quem.png" alt="">
     </div>
     <div class="text-foot">
         <h1> Quem Somos</h1>
-    </div> 
+    </div>
 </div>
 
 <div class="imagem-footer">
     <div class="img-footer ">
-            <img class="resp-img" src="./images/imgfooter.png" alt="">
+            <img class="resp-img" src="{{ urlImg() . $institucional->imagem }}" alt="">
     </div>
 </div>
 
@@ -40,11 +43,13 @@
                 <ul>
                     <li class="number-paddi">
                         <a href="">
-                            <img src="./images/bi_telephone-forward.png" alt="">
+                            <i class="fa fa-phone"></i>
                         </a>
                     </li>
                     <li>
-                        <a href=""> (XX) XXXX-XXXX</a>
+
+                        <a  href="tel:55{{ formatPhone($telefones[0]['telefone']) }}">{{ $telefones[0]['telefone'] }} </a>
+
                     </li>
                 </ul>
             </div>
@@ -53,14 +58,15 @@
                 <div class="locali-abot number-contat">
                     <ul>
                         <li>
-                            <a href="">Lorem ipsum dolor sit amet, consectetur.
-                            </a>
-                        </li>
-                        <li>
                             <a href="">
                                 <img src="./images/roomm.png" alt="">
                             </a>
                         </li>
+                        <li>
+                            <a href="">{{$empresa->endereco}}
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -71,17 +77,12 @@
         <ul>
             <li>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque, aliquam ac tristique sapien imperdiet. Nisl, phasellus ultricies egestas eget fusce. Aenean eu dictum sit ultricies quis morbi dui eget. Sit commodo arcu, cursus ut posuere leo eu est vestibulum.
-                </p>
-            </li>
-            <li>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque, aliquam ac tristique sapien imperdiet. Nisl, phasellus ultricies egestas eget fusce. Aenean eu dictum sit ultricies quis morbi dui eget. Sit commodo arcu, cursus ut posuere leo eu est vestibulum.
+                    {!! $institucional->text !!}
                 </p>
             </li>
         </ul>
     </div>
-    
+
 </div>
 
 <div class="formulario-about">
@@ -92,10 +93,10 @@
         <textarea class="esli-form" name="mensagem" id="" cols="30"  placeholder="Mensagem" rows="10"></textarea><br>
 
         <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
-   
+
         <input class="butto-form" type="submit" value="ENVIAR" />
-   
-      </form> 
+
+      </form>
 </div>
 
 <!--js-->

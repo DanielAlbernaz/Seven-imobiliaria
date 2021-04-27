@@ -35,6 +35,8 @@ Route::get('/imoveis', 'App\Http\Controllers\Site\ControllerImovel@index')->name
 Route::get('/institucional', 'App\Http\Controllers\Site\ControllerInstitucional@index')->name('institucional');
 Route::get('/politica-privacidade', 'App\Http\Controllers\Site\ControllerPolitica@index')->name('politica');
 Route::get('/termo-uso', 'App\Http\Controllers\Site\ControllerTermo@index')->name('termo');
+Route::post('/busca-imoveis', 'App\Http\Controllers\Site\ControllerImovel@busca')->name('busca');
+Route::get('/buscar', 'App\Http\Controllers\Site\ControllerImovel@buscar')->name('buscar');
 
 
 Route::middleware(['auth'])->group(function() {
