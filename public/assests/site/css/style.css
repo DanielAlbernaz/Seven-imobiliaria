@@ -1111,6 +1111,53 @@ article dd a{
   position: absolute;
 }
 
+.titulo-politica{
+  text-align: center;
+  padding: 7.8% 0;
+  position: relative;
+  font-size: 32px;
+  color: black;
+}
+
+.texto-politica{
+  width: 100%;
+  padding: 5% 10%;
+}
+
+.h1-titulo{
+  color: black;
+}
+
+.politica-text{
+  text-align: justify;
+  padding-top: 5%;
+}
+@media (max-width: 1180px){
+  .titulo-politica{
+    font-size: 25px;
+    padding: 7.8% 0;
+  }
+  
+}
+
+@media (max-width: 680px){
+  .titulo-politica {
+    font-size: 19px;
+    padding: 7.8% 0;
+}
+}
+
+@media (max-width: 480px){
+.titulo-politica {
+    font-size: 12px;
+    padding: 7.8% 0;
+}
+}
+
+.img-quem img{
+  width: 100%;
+}
+
 .resp-img{
   width: 100%;
 }
