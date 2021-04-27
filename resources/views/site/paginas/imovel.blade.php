@@ -48,7 +48,7 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área Útil:</h4>
+                                <p class="calculo-color">Área Útil:</p>
                             </dd>
                             <dd>
                                 <p> 48.00 m<sup>3</sub></p>
@@ -59,7 +59,7 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área Terreno:</h4>
+                                <p class="calculo-color">Área Terreno:</p>
                             </dd>
                             <dd>
                                 <p> 0.00 m<sup>2</sub></p>
@@ -70,7 +70,7 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área Comum:</h4>
+                                <p class="calculo-color">Área Comum:</p>
                             </dd>
                             <dd>
                                 <p> 0.00 m<sup>2</sub></p>
@@ -83,7 +83,7 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área total:</h4>
+                                <p class="calculo-color">Área total:</p>
                             </dd>
                             <dd>
                                 <p> 48.00 m<sup>3</sub></p>
@@ -94,7 +94,7 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área Privativa:</h4>
+                                <p class="calculo-color">Área Privativa:</p>
                             </dd>
                             <dd>
                                 <p> 0.00 m<sup>2</sub></p>
@@ -105,20 +105,20 @@
                                 <img src="./images/mdi.png" alt="">
                             </dd>
                             <dd class="area-marg">
-                                <h4>Área Construída:</h4>
+                                <p class="calculo-color">Área Construída:</p>
                             </dd>
                             <dd>
                                 <p> 48.00 m<sup>2</sub></p>
                             </dd>
                         </li>
                     </ul>
-                    <ul class="cod-area">
+                    <ul class="cod-area area-float">
                         <li>
                             <dd>
                                 <img src="./images/clarity.png" alt="">
                             </dd>
                             <dd>
-                                <h4>Código Imóvel:</h4>
+                                <p class="calculo-color">Código Imóvel:</p>
                             </dd>
                             <dd>
                                 <p> 3807 </p>

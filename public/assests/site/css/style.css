@@ -658,6 +658,7 @@ nav ul{
   padding: 2% 0;
 }
 
+
 .corpo{
   width: 100%;
 }
@@ -670,11 +671,10 @@ nav ul{
 
 .imovel-container{
   width: 60%;
-  height: 818px;
 }
 
 .imovel-container img{
-  max-width: 100%;
+  width: 100%;
 }
 
 .imgaleria{
@@ -695,30 +695,29 @@ nav ul{
 
 .calculo-area{
   border: 1px solid #b4b4b4;
-  height: 158px;
 }
 
 .calculo-area ul{
+  width: 100%;
   display: inline-block;
   padding: 2% 2%;
+}
+
+.calculo-color{
+  color:#4a4a4a !important;
 }
 
 .calculo-area li{
   display: inline-flex;
 }
 
-.calculo-area dd{
-  margin-right: 3px;
-}
-
 .calculo-area li p{
   color: #44318A;
 }
 
-.cod-area{
+/* .area-float{
   float: right;
-  margin-right: 10%;
-}
+} */
 
 .area-marg{
   padding-top: 3px;
