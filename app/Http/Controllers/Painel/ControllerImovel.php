@@ -50,7 +50,10 @@ class ControllerImovel extends Controller
             $objImovel->codigo_imovel = $request->codigo_imovel;
             $objImovel->finalidade = $request->finalidade;
             $objImovel->suites = $request->suites;
-            $objImovel->valor = $request->valor;
+            $valord = str_replace('.', '', $request->valor);
+            $valor = str_replace(',', '.', $valord);
+            $objImovel->valor =$valor;
+            $objImovel->valor =$valor;
             $objImovel->tipo_imovel = $request->tipo_imovel;
             $objImovel->endereco = $request->endereco;
             $objImovel->bairro = $request->bairro;
@@ -225,7 +228,6 @@ class ControllerImovel extends Controller
   }
 
   function edit(Request $request){
-
     try {
         if($request->image_file){
             $image_parts = explode(";base64,", $request->image_file);
@@ -260,7 +262,9 @@ class ControllerImovel extends Controller
         $objImovel->area_terreno = $request->area_terreno;
         $objImovel->area_comum = $request->area_comum;
         $objImovel->suites = $request->suites;
-        $objImovel->valor = $request->valor;
+        $valord = str_replace('.', '', $request->valor);
+        $valor = str_replace(',', '.', $valord);
+        $objImovel->valor =$valor;
         $objImovel->area_total = $request->area_total;
         $objImovel->area_privativa = $request->area_privativa;
         $objImovel->area_construida = $request->area_construida;

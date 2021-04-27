@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Empresa;
 use App\Models\Log;
+use App\Models\Telefone;
 use Illuminate\Contracts\Session\Session;
 use Symfony\Component\HttpFoundation\Session\Session as SessionSession;
 
@@ -38,4 +40,26 @@ function urlImg(){
     return $urlImg;
 }
 
+function exibirInfoEmpresa()
+{
+    $empresa = Empresa::find(1);
+
+    return $empresa ;
+}
+
+function exibirTelefone()
+{
+    $telefones = Telefone::all();
+
+    return $telefones;
+}
+function formatPhone($number)
+{
+    $number = str_replace('(', '', $number);
+    $number = str_replace(')', '', $number);
+    $number = str_replace(' ', '', $number);
+    $number = str_replace('-', '', $number);
+
+    return $number;
+}
 

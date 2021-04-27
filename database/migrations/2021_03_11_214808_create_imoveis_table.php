@@ -21,7 +21,7 @@ class CreateImoveisTable extends Migration
             $table->string('finalidade')->nullable();
             $table->string('tipo_imovel')->nullable();
             $table->string('suites')->nullable();
-            $table->string('valor')->nullable();
+            $table->float('valor')->nullable();
             $table->string('endereco')->nullable();
             $table->string('bairro')->nullable();
             $table->string('cidade_estado')->nullable();

@@ -50,7 +50,7 @@ $opcaoTipo[] .= "<option value='Salas' ".($imovel->tipo_imovel == 'Salas' ? 'sel
 $opcaoTipo[] .= "<option value='Sobrado' ".($imovel->tipo_imovel == 'Sobrado' ? 'selected="selected" ' : '').">Sobrado</option>";
 Form::sb_FormSelect('Tipo imóvel', 'tipo_imovel', $opcaoTipo, '250px', true);
 
-Form::sb_FormMoney('Valor', 'valor', 'Escreva o valor de venda ou aluguel', '250px', $imovel->valor, false);
+Form::sb_FormMoney('Valor', 'valor', 'Escreva o valor de venda ou aluguel', '250px', number_format($imovel->valor, 2, ',', '.'), false);
 Form::sb_FormText('Endereço', 'endereco', 'Escreva o endereço do imóvel ex: Rua 25...', '800px', $imovel->endereco, true);
 Form::sb_FormText('Bairro', 'bairro', 'Escreva o bairo do imóvel  ex: Jardim America', '800px', $imovel->bairro, true);
 Form::sb_FormText('Cidade / Estado', 'cidade_estado', 'Escreva  a cidade / estado ex: Goiânia - GO', '800px', $imovel->cidade_estado, true);
