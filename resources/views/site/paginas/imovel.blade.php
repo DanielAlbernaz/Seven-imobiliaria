@@ -1,45 +1,51 @@
 @include('site.main.header')
 
 
-    <div class="name">
-        <ul>
-            <li>
+    <div class="name-menu">
+
+            <span class="">
                 <h1>{{ $imovel->tipo_imovel }}</h1>
-            </li>
-            <li class="nameespace">
-                <i class="fa fa-map-marker"></i>   <a href="">{{ $imovel->endereco }}</a>
-            </li>
-            <li class="nameroom">
-                <img src="./images/roomm.png" alt="">
-            </li>
-        </ul>
+            </span>
+                <span class="" >
+                    <i class="fa fa-map-marker"></i> {{ $imovel->bairro }} - {{ $imovel->cidade_estado }}
+                </span>
+
+                <span class="" >
+                    <i class="fa fa-home"></i> Código do Imóvel: {{ $imovel->codigo_imovel }}
+                </span>
+
     </div>
 
+
+
     <div class="corpo">
+
         <div class="imovelcasa">
 
             <div class="imovel-container">
 
-                <div class="imgimovel">
-                    <img src="./images/Rectangle 57.png" alt="">
-                </div>
+                <div class="col-lg-8 col-md-7" style=" width: 100%; ">
+                    <div class="col-md-12">
 
-                <div class="imgaleria">
-                    <ul>
-                        <li class="espace-galeri">
-                            <img src="" alt="">
-                        </li>
-                        <li class="espace-galeri">
-                            <img src="" alt="">
-                        </li>
-                        <li class="espace-galeri">
-                            <img src="" alt="">
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                        </li>
-                    </ul>
-                </div>
+                        <!-- Slider -->
+                        <div class="property-slider default">
+                            @for ($i = 0; $i < count($galeriaFotos); $i++)
+                                <a    href="{{ urlImg() . $galeriaFotos[$i]->imagem }}" data-background-image="{{ urlImg() . $galeriaFotos[$i]->imagem }}" class="item mfp-gallery"></a>
+
+                            @endfor
+                        </div>
+
+                        <!-- Slider Thumbs -->
+                        <div  class="property-slider-nav">
+                            @for ($i = 0; $i < count($galeriaFotos); $i++)
+                                <div class="item" ><img style="width: 100%"   src="{{ urlImg() . $galeriaFotos[$i]->imagem }}"  height="100" class="fotoImgP"  alt=""></div>
+                            @endfor
+
+
+                    </div>
+                    </div>
+             </div>
+
 
                 <div class="">
                     <div class="property-description">
@@ -169,13 +175,7 @@
                     <h1>Descrição</h1>
                 </div>
                 <div class="item-descrit">
-                    <div class="img-descrit">
-                        <ul>
-                            <li>
-                                <img src="./images/la_address-card.png" alt="">
-                            </li>
-                        </ul>
-                    </div>
+
                     <div class="frase-descrit">
                         <ul>
                             <li>

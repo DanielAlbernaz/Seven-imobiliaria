@@ -30,7 +30,6 @@ Route::post('/logar', [ControllerUser::class, 'logar'])->name('logar');
 
 
 //Parametro nessa rota para detalhes do mimove
-Route::get('/detalhes-imovel/{id}', 'App\Http\Controllers\Site\ControllerImovel@detail');
 // Route::get('/imovel', 'App\Http\Controllers\Site\ControllerImovel@detail')->name('detalhe.imovel');
 Route::get('/imoveis', 'App\Http\Controllers\Site\ControllerImovel@index')->name('imoveis');
 Route::get('/institucional', 'App\Http\Controllers\Site\ControllerInstitucional@index')->name('institucional');
@@ -39,6 +38,9 @@ Route::get('/termo-uso', 'App\Http\Controllers\Site\ControllerTermo@index')->nam
 Route::post('/busca-imoveis', 'App\Http\Controllers\Site\ControllerImovel@busca')->name('busca');
 Route::get('/buscar', 'App\Http\Controllers\Site\ControllerImovel@buscar')->name('buscar');
 Route::post('/buscar-imoveis-lista-mapa', 'App\Http\Controllers\Site\ControllerImovel@listarLocalizacao')->name('listarLocalizacao');
+
+Route::get('/detalhes-imovel', 'App\Http\Controllers\Site\ControllerImovel@detalhe')->name('detalhes.imovel');
+
 
 
 Route::middleware(['auth'])->group(function() {

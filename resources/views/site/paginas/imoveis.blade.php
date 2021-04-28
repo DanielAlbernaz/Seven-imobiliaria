@@ -93,7 +93,7 @@
         <article class="cont">
 
             <div class="cont-imagem">
-                <a href="">
+                <a href="{{ route('detalhes.imovel', ['id' =>$imoveis[$i]->id ]) }}">
                     <img src="{{ urlImg() . $imoveis[$i]->imagem }}" alt="">
                 </a>
 

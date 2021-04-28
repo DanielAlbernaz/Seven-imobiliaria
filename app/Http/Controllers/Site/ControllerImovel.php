@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Models\GalleriaImovel;
 use App\Models\Imovel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -15,11 +16,13 @@ class ControllerImovel extends Controller
 
         return view('site.paginas.imoveis', compact('imoveis'));
     }
-    function detail(Request $request)
+    function detalhe(Request $request)
     {
-        $imovel = Imovel::find($request->id);
 
-        return view('site.paginas.imovel', compact('imovel'));
+        $imovel = Imovel::find($request->id);
+        $galeriaFotos = GalleriaImovel::where('id_imovel', $imovel->id)->get();
+
+        return view('site.paginas.imovel', compact('imovel', 'galeriaFotos'));
     }
     function busca(Request $request)
     {

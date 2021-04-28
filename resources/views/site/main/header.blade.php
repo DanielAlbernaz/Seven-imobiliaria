@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('assests/site/css/style.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('assests/site/css/style2.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assests/site/css/main.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assests/site/css/style2.css')}}" rel="stylesheet" type="text/css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 

@@ -681,6 +681,12 @@ nav ul{
   background: #FFFFFF;
   display: inline-flex;
 }
+.name-menu{
+  margin-top: 5px;
+  width: 100%;
+  padding: 3% 10%;
+  background: #FFFFFF;
+}
 
 .name img{
   color: #000000;
@@ -1498,4 +1504,13 @@ margin-bottom: 3.5%;
 
 .margin-top-0 {
     margin-top: 0 !important;
+}
+
+
+.fotoImgP {
+    text-align: center;
+    max-width: 100%;
+    max-height: 279px;
+    width: 373px;
+    object-fit: cover;
 }
